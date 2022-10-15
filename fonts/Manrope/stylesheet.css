@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('Manrope-SemiBold.eot');
+    src: url('Manrope-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Manrope-SemiBold.woff2') format('woff2'),
+        url('Manrope-SemiBold.woff') format('woff'),
+        url('Manrope-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('Manrope-Regular.eot');
+    src: url('Manrope-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Manrope-Regular.woff2') format('woff2'),
+        url('Manrope-Regular.woff') format('woff'),
+        url('Manrope-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

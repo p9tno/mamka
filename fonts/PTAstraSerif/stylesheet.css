@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'PT Astra Serif';
+    src: url('PTAstraSerif-Italic.eot');
+    src: url('PTAstraSerif-Italic.eot?#iefix') format('embedded-opentype'),
+        url('PTAstraSerif-Italic.woff2') format('woff2'),
+        url('PTAstraSerif-Italic.woff') format('woff'),
+        url('PTAstraSerif-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

@@ -1,0 +1,175 @@
+/* Header
+ ----------------------------------------------------------------------------- */
+.header {
+	line-height: 1;
+	padding: 0.875em 0;
+
+	@media (min-width: 768px) {
+		padding: 1.8125em 0;
+		line-height: 1.125;
+
+	}
+
+	&__row {
+		@extend .container_center;
+		margin: auto;
+		position: relative;
+
+		@media (min-width: 768px) {
+			position: initial;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+
+	}
+
+}
+
+.logo {
+	display: block;
+
+	width: 10em;
+	height: 2.6875em;
+	margin: 0 auto 0.5625em;
+
+	@media (min-width: 768px) {
+		margin: 0 0 0.6875em;
+	}
+
+	&__descpiption {
+		width: 16em;
+		margin: 0 auto;
+		text-align: center;
+
+		span {
+			font-size: 0.6875em;
+		}
+
+		@media (min-width: 768px) {
+			width: 11.875em;
+			margin: 0;
+			text-align: left;
+
+			span {
+				font-size: 0.8125em;
+			}
+
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.adress {
+		display: flex;
+		align-items: center;
+
+		&__img {
+			width: 3.4375em;
+			height: 3.4375em;
+			margin-right: 0.9375em;
+		}
+
+		&__text {
+			width: 10.625em;
+
+			span {
+				font-size: 0.8125em;
+			}
+		}
+
+	}
+}
+
+@media (min-width: 768px) {
+	.callback {
+		&__label {
+			width: 9.875em;
+
+			span {
+				font-size: 0.8125em;
+			}
+		}
+
+		&__link {
+			a {
+				text-decoration: none;
+				color: $color_success;
+				position: relative;
+
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: -0.075em;
+					left: 0;
+					width: 100%;
+					border-bottom: 0.0625em solid $color_success;
+					transition: 0.3s;
+				}
+
+				&:hover {
+					color: $color_danger;
+
+					&:after {
+						border-bottom: 0.0625em solid $color_danger;
+
+					}
+
+				}
+			}
+		}
+
+	}
+}
+
+.phone {
+	position: absolute;
+	top: 0;
+	right: 2.5em;
+
+	@media (min-width: 768px) {
+		position: initial;
+		top: auto;
+		right: auto;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $main_color;
+
+		&:hover {
+			color: $color_danger;
+		}
+
+	}
+
+	&__number {
+		font-size: 1.5em;
+	}
+
+	&__label {
+		margin-top: 0.3125em;
+		margin-left: 1em;
+
+		span {
+			font-size: 0.8125em;
+		}
+	}
+
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 2.875em;
+		height: 2.875em;
+		border-radius: 50%;
+		background-color: $color_success;
+		color: $color_white;
+
+		&:before {
+			font-size: 0.875em;
+		}
+	}
+
+}

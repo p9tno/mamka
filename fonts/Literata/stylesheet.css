@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Literata';
+    src: url('Literata-Light.eot');
+    src: url('Literata-Light.eot?#iefix') format('embedded-opentype'),
+        url('Literata-Light.woff2') format('woff2'),
+        url('Literata-Light.woff') format('woff'),
+        url('Literata-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
