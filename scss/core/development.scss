@@ -1,0 +1,272 @@
+.development {
+    padding-bottom: 6.875em;
+    overflow: hidden;
+
+    .section__title {
+
+        position: relative;
+        margin: 0 0 0 6.25em;
+        text-align: left;
+
+        &:after {
+            content: '';
+            background-image: url("../img/p.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            position: absolute;
+            top: 1.25em;
+            left: -4.5em;
+            width: 1.75em;
+            height: 1.75em;
+            z-index: 1;
+            @media (min-width: 768px) {
+                position: absolute;
+                top: auto;
+                bottom: 0;
+                left: 11.25em;
+                width: 2.5em;
+                height: 2.5em;
+            }
+
+        }
+
+        small {
+            font-size: 0.875em;
+            display: inline-block;
+
+            @media (min-width: 768px) {
+                font-size: 1.25em;
+                transform: translateY(-5px);
+                margin-left: 3em;
+
+            }
+        }
+    }
+
+    &__content {
+        @media (min-width: 768px) {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+
+        }
+    }
+
+    &__left {
+        position: relative;
+        margin-bottom: 3em;
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+            margin-top: 1.5em;
+
+        }
+    }
+
+    &__offer {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        left: -2.5em;
+        background-image: url("../img/offer_m.webp");
+        width: 7.8125em;
+        height: 14.1875em;
+
+        @media (min-width: 768px) {
+            top: 13.25em;
+            left: auto;
+            transform: none;
+            right: 1.75em;
+            background-image: url("../img/offer.webp");
+            width: 46.9375em;
+            height: 50.4375em;
+        }
+    }
+
+    &__time {
+        margin-top: 1em;
+        text-align: center;
+        @media (min-width: 768px) {
+            margin-top: 0;
+            position: absolute;
+            top: 15.25em;
+            left: 33em;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 10.3125em;
+            height: 10.3125em;
+            border-radius: 50%;
+            border: 0.0625em solid #DCD8D5;
+
+        }
+    }
+
+    &__right {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 9.625em 19.875em;
+
+        grid-gap: 0.625em;
+        @media (min-width: 768px) {
+            grid-template-rows: 13.4375em 28.125em;
+            grid-gap: 1.25em;
+            width: 28.125em;
+
+        }
+
+        &:after {
+            content: '\e902';
+            font-family: 'icomoon';
+            font-size: 1em;
+            color: #2E8F7E;
+
+            position: absolute;
+            top: -1.75em;
+            left: 6.125em;
+
+            @media (min-width: 768px) {
+                font-size: 1.75em;
+                top: 0.75em;
+                left: -2.125em;
+
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+        background-color: rgba($color_success, 0.1);
+        color: $color_success;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding: 1em 0.9375em 0.9375em;
+        @media (min-width: 768px) {
+            padding: 1.25em 3.125em 1.25em 1.25em;
+
+        }
+
+        &_form {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: #F4F2F0;
+            color: $main_color;
+            padding: 1.875em 1.375em 2em;
+
+            @media (min-width: 768px) {
+                padding: 3.4375em 3.125em 4.375em;
+
+            }
+
+            .development__icon {
+                position: absolute;
+                top: 1em;
+                left: 0.9375em;
+                color: #BBAB9E;
+                border-color: #BBAB9E;
+                @media (min-width: 768px) {
+                    top: 1.25em;
+                    left: 1.25em;
+                }
+
+                i {
+                    font-size: 0.5em;
+                    @media (min-width: 768px) {
+                        font-size: 0.625em;
+
+                    }
+                }
+            }
+
+            .development__label {
+                text-align: center;
+            }
+        }
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+        border: 0.0625em solid $color_success;
+
+        width: 1.4375em;
+        height: 1.4375em;
+        @media (min-width: 768px) {
+            width: 2em;
+            height: 2em;
+
+        }
+
+        span {
+            font-family: $italic_font_family;
+            font-size: 0.75em;
+            @media (min-width: 768px) {
+                font-size: 1.1875em;
+
+            }
+        }
+
+    }
+
+    &__label {
+        @media (min-width: 768px) {
+            line-height: 1.4;
+        }
+
+        span {
+            font-size: 0.875em;
+            @media (min-width: 768px) {
+                font-size: 1.125em;
+
+            }
+        }
+    }
+
+}
+
+.time {
+    &__title {
+        @media (max-width: 767px) {
+            display: inline-block;
+        }
+
+        span {
+            font-size: 0.875em;
+            font-weight: 600;
+
+            @media (min-width: 768px) {
+                font-family: $italic_font_family;
+                font-size: 1.5em;
+                font-weight: 400;
+
+            }
+        }
+    }
+
+    &__desc {
+        @media (max-width: 767px) {
+            display: inline-block;
+        }
+        @media (min-width: 768px) {
+            width: 7.5em;
+        }
+
+        span {
+            font-size: 0.875em;
+            @media (min-width: 768px) {
+                font-size: 0.8125em;
+
+            }
+        }
+    }
+
+}

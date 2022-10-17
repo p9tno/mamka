@@ -4,10 +4,14 @@
 	line-height: 1;
 	padding: 0.875em 0;
 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+
 	@media (min-width: 768px) {
 		padding: 1.8125em 0;
 		line-height: 1.125;
-
 	}
 
 	&__row {

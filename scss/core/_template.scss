@@ -45,11 +45,61 @@ body {
 
 .section {
 	padding: 2em 0;
+	@media (min-width: 768px) {
+		padding: 3.75em 0;
+	}
 
 	&__title {
+		margin: 0;
 		font-family: $second_font_family;
-		font-weight: 400;
+		font-weight: 300;
+		font-size: 1em;
+		line-height: 1.1667;
+		text-align: center;
+		margin: 0 auto;
+		letter-spacing: -0.02em;
+
+		@media (min-width: 768px) {
+			width: 43.75em;
+		}
+
+		span {
+			font-size: 1.5625em;
+			@media (min-width: 768px) {
+				font-size: 3.75em;
+
+			}
+		}
+
+		@media (min-width: 768px) {
+			&_sm {
+				line-height: 1.1365;
+
+				span {
+					font-size: 2.75em;
+				}
+			}
+
+		}
+
 	}
+
+	&__subtitle {
+		margin: 1.5625em auto 0;
+		text-align: center;
+		@media (min-width: 768px) {
+			width: 40em;
+		}
+
+		span {
+			font-size: 0.875em;
+			@media (min-width: 768px) {
+				font-size: 1.25em;
+
+			}
+		}
+	}
+
 }
 
 .desktop {
@@ -74,4 +124,10 @@ body {
 		height: 100%;
 		object-fit: cover;
 	}
+}
+
+.bg {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }

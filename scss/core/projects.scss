@@ -1,0 +1,107 @@
+.projects {
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 9.6875em;
+        grid-gap: 0.625em;
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 26.875em;
+            grid-gap: 1.5625em;
+
+        }
+    }
+
+    &__item {
+        a {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: $color_white;
+
+            @media (min-width: 768px) {
+                &:hover {
+                    .projects__title {
+                        transform: translateY(-2em);
+
+                    }
+
+                    .projects__icon {
+                        background-color: $color_white;
+
+                        i {
+                            color: $main_color;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0.625em;
+        @media (min-width: 768px) {
+            padding: 1.25em 1.25em 1.625em;
+
+        }
+    }
+
+    &__icon {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0.0625em solid;
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 50%;
+        border-color: $color_white;
+        background-color: transparent;
+        font-size: 0.575em;
+        @media (min-width: 768px) {
+            font-size: 1em;
+            transition: 0.3s;
+        }
+
+        i {
+            font-size: 0.8125em;
+            color: $color_white;
+            @media (min-width: 768px) {
+                transition: color 0.3s;
+            }
+        }
+    }
+
+    &__title {
+        margin: 0 auto;
+        text-align: center;
+        line-height: 0.95;
+        @media (min-width: 768px) {
+            line-height: 1.3;
+            transform: translateY(0);
+            transition: transform 0.3s;
+        }
+
+        span {
+            font-family: $second_font_family;
+            font-size: 0.875em;
+            font-weight: 300;
+            @media (min-width: 768px) {
+                font-size: 2.125em;
+            }
+        }
+    }
+
+}

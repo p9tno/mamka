@@ -1,6 +1,210 @@
 extends layout/layout.pug
 
 block content
+    // begin firstscreen
+    section#firstscreen.firstscreen.section.bg
+        .container_center
+            .firstscreen__content
+                h1.section__title
+                    span Дизайн детских пространств для дома и производство мебели премиум-класса 
+                .section__subtitle.desktop
+                    span Разработаем дизайн-проект детской комнаты, предоставим полную техническую документацию и укомплектуем мебелью премиум-класса, изготовленную на собственном производстве
+                .firstscreen__action
+                    a.btn(href="#") Рассказать о своих пожеланиях
+                .firstscreen__ch
+                    .ch
+                        .ch__wrap
+                            .ch__content
+                                span Вся мебель разработана совместно со швейцарским конструкторском бюро Sonex
+                            .ch__icon.img
+                                img(src="img/ch.png")
+
+    // end firstscreen
+
+    // begin clients
+    section#clients.clients.section
+        .container_center
+            h2.section__title
+                span Более 1 000 проектов реализовано за 5 лет
+            .section__subtitle
+                span Среди наших клиентов известные актеры, спортсмены, участники списка Forbes. Но в первую очередь — это любящие родители, стремящихся создать комфортные и безопасные пространства для своих детей
+            .clients__list
+                // start item
+                .clients__item
+                    .clients__quote
+                        .quote
+                            .quote__wrap
+                                .quote__icon
+                                    i.icon_quotes
+                                .quote__content
+                                    span Любое наше пожелание было услышано и реализовано. Ариане эта комната запомниться на всю жизнь! Мы правильно сделали, что нашли вас.
+                    .clients__persone
+                        .persone
+                            .persone__bg.bg
+                            .persone__name
+                                span Анна 
+                                span Хилькевич
+                                small воспитывает двух дочерей,<br> актриса театра и телевидения
+
+                    .clients__video
+                        .video
+                            .video__bg.bg(style="background-image: url('img/bg_1.webp')")
+                                .video__play.js-youtubeModal#gvrSH5z5EGQ
+                                    i.icon_play
+
+
+                // end item
+                // start item
+                .clients__item
+                    .clients__quote
+                        .quote
+                            .quote__wrap
+                                .quote__icon
+                                    i.icon_quotes
+                                .quote__content
+                                    span Для меня очень важно то, как моя семья проводит свое время. С появлением новой двухэтажной кровати, наша жизнь в доме преобразилась, потому что здесь можно не только спать, но и играть.
+                    .clients__persone
+                        .persone
+                            .persone__bg.bg
+                            .persone__name
+                                span Андрей 
+                                span Мерзликин
+                                small воспитывает двух сыновей<br> и двух дочерей, актер театра и кино
+
+                    .clients__video
+                        .video
+                            .video__bg.bg(style="background-image: url('img/bg_2.webp')")
+                                .video__play.js-youtubeModal#gvrSH5z5EGQ
+                                    i.icon_play
+
+
+                // end item
+                // start item
+                .clients__item
+                    .clients__quote
+                        .quote
+                            .quote__wrap
+                                .quote__icon
+                                    i.icon_quotes
+                                .quote__content
+                                    span Получилось лаконично и стильно. Качество крутое, кайфуем — трогаешь и приятно:) В действительности получилось даже красивее, чем на картинках. Невозможно оторваться!
+                    .clients__persone
+                        .persone
+                            .persone__bg.bg
+                            .persone__name
+                                span Дмитрий 
+                                span Кожома
+                                small воспитывает сына<br> и дочь, артист и шоумен
+
+                    .clients__video
+                        .video
+                            .video__bg.bg(style="background-image: url('img/bg_3.webp')")
+                                .video__play.js-youtubeModal#gvrSH5z5EGQ
+                                    i.icon_play
+
+
+                // end item
+
+
+
+
+
+    // end clients
+
+    // begin projects
+    section#projects.projects.section
+        .container_center
+            .projects__grid
+                each item in [ {number: '1', title: 'Детскаяна<br> 6 детей'}, {number: '2', title: 'Дом Бохо'}, {number: '3', title: '2-уровневая<br> комната для девочки'}, {number: '4', title: 'Комната для разнополых деток'}, {number: '5', title: 'Домик для юного принца'}, {number: '6', title: 'Комната<br> для девочки'} ]
+
+                    .projects__item
+                        a.img(href="img/project_"+item.number+".webp" data-fancybox data-type="image")
+                            img(src="img/project_"+item.number+".webp" loading="lazy")
+                            .projects__content
+                                .projects__icon
+                                    i.icon_arrow
+                                .projects__title
+                                    span!=item.title
+
+    // end projects
+
+    // begin development
+    section#development.development.section
+        .container_center
+            .development__content
+
+                .development__left
+                    h2.section__title.section__title_sm
+                        span Получите коммерческое предложение на разработку дизайн-проекта для вашей детской
+                        small в 3-х ценовых вариантах
+                    .development__offer.bg
+
+
+
+                .development__right
+                    .development__item
+                        .development__icon
+                            span 1
+                        .development__label
+                            span Расчёт по производству мебели
+
+                    .development__item
+                        .development__icon
+                            span 2
+                        .development__label
+                            span Стоимость комплектации интерьера
+
+                    .development__item.development__item_form 
+                        .development__icon
+                            i.icon_phone
+                        .development__label
+                            span <b>Оставьте свой телефон,</b><br> чтобы мы связались с вами, уточнили информацию по проекту и предоставили вам подборку под вашу задачу
+                        .development__form
+                            form.form(action="send.php")
+                                //- из какой формы на сайте
+                                input(type="hidden" name="subject" value="форма: Получить предложение")
+                                //- проверка спама
+                                input(type="hidden" name="notspam" value="")
+
+                                .form__row
+                                    input.tel(type="text", required placeholder="+7")
+                                .form__row
+                                    .button
+                                        button.btn(type="submit") Получить предложение
+                                .form__row.form__row_mb-0
+                                    .form__privacy
+                                        span Нажимая на кнопку, вы соглашаетесь на <a href="#" target="_blank">условия обработки данных</a>
+
+                .development__time
+                    .time
+                        .time__title
+                            span 14 дней
+
+                        .time__desc
+                            span.mobile  - 
+                            span срок разработки проекта
+
+
+
+
+
+
+    // end development
+
+    // begin products
+    section#products.products.section
+        .container_center
+            h2.section__title.section__title_sm
+                span Более 100 категорий и наименований продукции в ассортименте и под заказ с полной гарантией производителя
+            .products__grid
+                each item in [ {number: '1', title: 'Кровати'}, {number: '2', title: 'Диваны'}, {number: '3', title: 'Шкафы'}, {number: '4', title: 'Столы и стулья'}, {number: '5', title: 'Спортивные уголки'}, {number: '6', title: 'Зоны хранения'} ]
+                    .products__item.bg(style="background-image: url('img/cat_"+item.number+".webp')")
+                        .products__title
+                            span!=item.title
+
+
+
+    // end products
 
 
 

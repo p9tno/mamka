@@ -1,46 +1,129 @@
-// Обертка для адаптивного видео
-//	<div class="video__wrapper js-youtube" id="ID_VIDEO">
-//		iframe c youtube
-// </div>
 .video {
-	&__wrapper {
+	&__bg {
 		position: relative;
-		overflow: hidden;
-		padding-bottom: 56.4%;
-
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-
-		.video__prev,
-		iframe {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
-	}
-
-	&__prev {
-		position: absolute;
-		display: block;
-		top: 0;
-		left: 0;
 		width: 100%;
-		height: 100%;
+		padding-bottom: 11.875em;
+
+		@media (min-width: 768px) {
+			width: 36.25em;
+			padding-bottom: 21.25em;
+
+		}
 	}
 
 	&__play {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		width: 7.2em;
-		height: 7.2em;
-		margin-top: -3.6em;
-		margin-left: -3.6em;
+		transform: translate(-50%, -50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 7.1875em;
+		height: 7.1875em;
 		border-radius: 50%;
+		background-color: $color_success;
+		color: $color_white;
 		cursor: pointer;
-		// background-color: #f00;
+		transition: background-color 0.3s;
+		font-size: 0.55em;
+		@media (min-width: 768px) {
+			font-size: 1em;
+
+		}
+
+		i {
+			font-size: 2.75em;
+			margin-left: 0.25em;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			display: block;
+			border-radius: 50%;
+			top: 50%;
+			left: 50%;
+			border: 0.375em solid;
+			border-color: $color_success;
+			transform: translate(-50%,-50%),scale(1);
+			width: 6.875em;
+			height: 6.875em;
+			animation: 1s pulse1 infinite;
+			transition: border-color 0.3s;
+		}
+
+		&:hover {
+			background-color: $color_danger;
+
+			&:after {
+				content: '';
+				border-color: $color_danger;
+			}
+		}
+
+	}
+
+}
+
+@keyframes pulse1 {
+	0% {
+		transform: translate(-50%,-50%) scale(1);
+	}
+
+	60% {
+		opacity: 0.2;
+	}
+
+	to {
+		opacity: 0;
+		transform: translate(-50%,-50%) scale(1.2);
 	}
 }
+
+// Обертка для адаптивного видео
+//	<div class="video__wrapper js-youtube" id="ID_VIDEO">
+//		iframe c youtube
+// </div>
+// .video {
+// 	&__wrapper {
+// 		position: relative;
+// 		overflow: hidden;
+// 		padding-bottom: 56.4%;
+//
+// 		background-repeat: no-repeat;
+// 		background-position: center;
+// 		background-size: cover;
+//
+// 		.video__prev,
+// 		iframe {
+// 			position: absolute;
+// 			top: 0;
+// 			left: 0;
+// 			width: 100%;
+// 			height: 100%;
+// 		}
+// 	}
+//
+// 	&__prev {
+// 		position: absolute;
+// 		display: block;
+// 		top: 0;
+// 		left: 0;
+// 		width: 100%;
+// 		height: 100%;
+// 	}
+//
+// 	&__play {
+// 		position: absolute;
+// 		top: 50%;
+// 		left: 50%;
+// 		width: 7.2em;
+// 		height: 7.2em;
+// 		margin-top: -3.6em;
+// 		margin-left: -3.6em;
+// 		border-radius: 50%;
+// 		cursor: pointer;
+// 		// background-color: #f00;
+// 	}
+// }
