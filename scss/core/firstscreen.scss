@@ -21,7 +21,7 @@
         }
     }
 
-    &__ch {
+    &__extra {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -39,10 +39,10 @@
 
 }
 
-.ch {
+.extra {
 
     background-color: #F4F5F6;
-    transform: skewY(-10deg);
+    transform: skewY(-8deg);
 
     width: 8.4375em;
     height: 8.513em;
@@ -56,7 +56,7 @@
     }
 
     &__wrap {
-        transform: skewY(10deg);
+        transform: skewY(8deg);
         position: relative;
     }
 

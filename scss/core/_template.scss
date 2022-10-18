@@ -88,13 +88,14 @@ body {
 		margin: 1.5625em auto 0;
 		text-align: center;
 		@media (min-width: 768px) {
-			width: 40em;
+			width: 36em;
+			line-height: 1.389;
 		}
 
 		span {
 			font-size: 0.875em;
 			@media (min-width: 768px) {
-				font-size: 1.25em;
+				font-size: 1.125em;
 
 			}
 		}
