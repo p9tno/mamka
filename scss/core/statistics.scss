@@ -1,8 +1,12 @@
 .statistics {
     overflow: hidden;
+    padding-top: 9.375em;
+    padding-bottom: 3.75em;
 
     @media (min-width: 768px) {
+        padding-top: 7.1875em;
         padding-bottom: 0;
+        margin-bottom: -11.25em;
     }
 
     &__top {

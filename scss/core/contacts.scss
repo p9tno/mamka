@@ -1,0 +1,279 @@
+.contacts {
+    .section__subtitle,
+    .section__title {
+        @media (min-width: 768px) {
+            width: auto;
+            text-align: left;
+        }
+    }
+
+    .section__subtitle {
+        margin-top: 1.25em;
+        @media (min-width: 768px) {
+            margin-top: 1.875em;
+            line-height: 1.4;
+        }
+    }
+    padding-bottom: 2.8125em;
+    @media (min-width: 768px) {
+        padding-bottom: 9.0625em;
+    }
+
+    &__row {
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &:first-child {
+            margin-bottom: 1.875em;
+            @media (min-width: 768px) {
+                margin-bottom: 4.75em;
+
+            }
+        }
+    }
+
+    &__col {
+        &:first-child {
+            @media (min-width: 768px) {
+                width: 25.625em;
+            }
+        }
+
+        &:last-child {
+
+            @media (min-width: 768px) {
+                width: 55.3125em;
+
+            }
+        }
+    }
+
+    &__numbers {
+        margin-top: 0.6875em;
+        margin-bottom: 1.5625em;
+        @media (min-width: 768px) {
+            margin-top: 2.1875em;
+            margin-bottom: 0;
+
+        }
+    }
+
+    &__text {
+        margin-bottom: 0.875em;
+        text-align: center;
+        @media (min-width: 768px) {
+            margin-bottom: 1.6875em;
+            line-height: 1.4;
+            width: 21.875em;
+            text-align: left;
+        }
+
+        span {
+            font-weight: 300;
+            font-size: 0.875em;
+            @media (min-width: 768px) {
+                font-size: 1.125em;
+
+            }
+        }
+    }
+
+    &__link {
+        text-align: center;
+        margin-bottom: 1.9375em;
+        @media (min-width: 768px) {
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        a {
+            position: relative;
+            text-decoration: none;
+            color: $main_color;
+            font-weight: 500;
+            font-size: 0.875em;
+            @media (min-width: 768px) {
+                font-size: 1.125em;
+
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: -0.125em;
+                left: 0;
+                width: 100%;
+                border-bottom: 0.0625em solid rgba($color_danger, 1);
+                transition: 0.3s;
+
+            }
+
+            &:hover {
+                color: $color_danger;
+            }
+        }
+    }
+
+    &__adress {
+        text-align: center;
+        margin-bottom: 2.0625em;
+        line-height: 1.3;
+        @media (min-width: 768px) {
+            margin-bottom: 3.75em;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            line-height: 1.4;
+
+        }
+
+        span {
+            font-weight: 300;
+            font-size: 0.875em;
+            display: inline-block;
+            @media (min-width: 768px) {
+                font-size: 1.125em;
+            }
+
+            &:last-child {
+                @media (max-width: 767px) {
+                    margin-top: 0.9375em;
+                    font-size: 0.6875em;
+                    display: block;
+
+                }
+                @media (min-width: 768px) {
+                    color: rgba($main_color, 0.3);
+
+                }
+            }
+        }
+
+        b {
+            font-weight: 500;
+        }
+
+    }
+
+    &__action {
+        text-align: center;
+        @media (min-width: 768px) {
+            text-align: left;
+        }
+
+        a {
+
+            color: #121213;
+            font-family: $main_font_family;
+            font-weight: 600;
+            border: 1px solid $color_danger;
+            outline: none;
+            text-decoration: none;
+            display: inline-block;
+            background-color: transparent;
+            text-align: center;
+            max-width: 100%;
+            min-width: 17.5em;
+            cursor: pointer;
+            border-radius: 7em;
+            transition: 0.3s;
+
+            font-size: 0.875em;
+            padding: 1.293em 1em;
+
+            &:first-child {
+                margin-bottom: 0.9375em;
+                @media (min-width: 768px) {
+                    margin-right: 1.25em;
+                    margin-bottom: 0;
+                }
+            }
+
+            @media (min-width: 768px) {
+                border-radius: 5em;
+                font-size: 1.25em;
+                padding: 0.85em 1.25em;
+                min-width: 17.5em;
+
+            }
+
+            &:hover {
+                background-color: $color_danger;
+                color: $color_white;
+            }
+
+            &:active {
+                background-color: darken($color_danger, 5%);
+
+            }
+
+            &.success {
+                border: 1px solid $color_success;
+
+                &:hover {
+                    background-color: $color_success;
+                    // color: $color_white;
+                }
+
+                &:active {
+                    background-color: darken($color_success, 5%);
+
+                }
+            }
+        }
+    }
+
+}
+
+.numbers {
+    display: flex;
+    @media (max-width: 767px) {
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:first-child {
+            // margin-right: 2.625em;
+            /* 42/16 */
+            @media (min-width: 768px) {
+                margin-right: 5.125em;
+
+            }
+        }
+    }
+
+    span {
+        font-family: $second_font_family;
+        font-weight: 200;
+        font-size: 3.375em;
+        /* 54/16 */
+        @media (min-width: 768px) {
+            // font-size: 3.75em;
+
+        }
+    }
+
+    sup {
+        font-size: 0.6em;
+        font-weight: 600;
+    }
+
+    small {
+        font-size: 0.6875em;
+        /* 11/16 */
+        font-weight: 300;
+        margin-top: 0.2em;
+        @media (min-width: 768px) {
+            font-size: 0.8125em;
+            margin-top: 0.34em;
+
+        }
+    }
+
+}

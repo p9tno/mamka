@@ -4,6 +4,7 @@ body {
 	font-family: $main_font_family;
 	color: $main_color;
 	line-height: $main_line_height;
+	// font-weight: 300;
 	// background-color: #101010;
 	font-size: calc(.04 * 100vw + 0px);
 
@@ -52,12 +53,14 @@ body {
 	&__title {
 		margin: 0;
 		font-family: $second_font_family;
-		font-weight: 300;
+		font-weight: 200;
 		font-size: 1em;
 		line-height: 1.1667;
 		text-align: center;
 		margin: 0 auto;
-		letter-spacing: -0.02em;
+
+		// letter-spacing: -0.02em;
+		letter-spacing: 0.02em;
 
 		@media (min-width: 768px) {
 			width: 43.75em;
@@ -87,6 +90,7 @@ body {
 	&__subtitle {
 		margin: 1.5625em auto 0;
 		text-align: center;
+		font-weight: 300;
 		@media (min-width: 768px) {
 			width: 36em;
 			line-height: 1.389;
@@ -131,4 +135,18 @@ body {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.counter-wrap {
+	counter-reset: line var(--line-num, 0);
+}
+
+.counter-item {
+	counter-increment: line;
+
+	.counter-el {
+		&:before {
+			content: counter(line) ' ';
+		}
+	}
 }

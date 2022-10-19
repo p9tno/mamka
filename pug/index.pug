@@ -246,6 +246,82 @@ block content
     // end statistics
 
 
+    // begin feedback
+    section.feedback.section
+        .container_center
+            .feedback__wrap
+                .feedback__content
+                    h2.feedback__title
+                        span Хотите получить подборку готовых идей и интерьерных решений под ваш проект?
+                    .feedback__subtitle
+                        span <b>Оставьте свой телефон,</b> чтобы мы связались с вами, уточнили информацию по проекту и предоставили вам подборку под вашу задачу
+                    .feedback__form
+                        form.form.form_grid(action="send.php")
+                            //- из какой формы на сайте
+                            input(type="hidden" name="subject" value="форма: Получить подборку готовых идей")
+                            //- проверка спама
+                            input(type="hidden" name="notspam" value="")
+
+                            .form__row
+                                input.tel(type="text", required placeholder="+7")
+                            .form__row
+                                .button
+                                    button.btn(type="submit") Получить предложение
+                            .form__row.form__row_mb-0.form__row_full
+                                .form__privacy
+                                    span Нажимая на кнопку, вы соглашаетесь на <a href="#" target="_blank">условия обработки данных</a>
+                .feedback__bg.bg
+
+    // end feedback
+
+
+    // begin production
+    section#production.production.section
+        .container_center
+            .production__content
+                .production__left 
+                    h2.section__title.section__title_sm
+                        span Производим индивидуальную детскую мебель на собственной фабрике на Урале
+                    .production__square
+                        span 4 000 м<sup>2</sup>
+                        small площадь производства
+                    .production__film.desktop
+                        .production__img.img
+                            img(src="img/chair.webp")
+                        .production__label
+                            .production__icon
+                                img(src="img/play_border.svg")
+                            span Посмотрите мини-фильм<br> о фабрике-производителе<br> «Мамка»
+
+                .production__right
+                    .section__subtitle
+                        span Строительство собственного технологичного и автоматизированного мебельного производства — это уровень, позволить который себе могут лишь единицы. <b>Но это позволяет нам:</b>
+                    .production__list.counter-wrap
+                        each item in ['Контролировать и проверять качество каждой единицы мебели, которая готова отправиться в дом заказчика.', 'Создавать идеальные по исполнению, эстетике и безопасности продукты.', 'Точно соблюдать обозначенные сроки и стоимость производства.' ]
+                            .production__item.counter-item
+                                .counter-el
+                                span=item
+                    .production__info.mobile
+                        span Служба технического контроля на производстве состоит из шести человек, и каждая единица мебели проходит через два поста контроля качества.
+                    .production__label.mobile
+                        span <b>Посмотрите мини-фильм</b><br> о фабрике-производителе «Мамка»
+            .production__video
+                .video
+                    .video__bg.video__bg_full.bg(style="background-image: url('img/bg.webp')")
+                        .video__play.js-youtubeModal#gvrSH5z5EGQ
+                            i.icon_play
+            .production__info.desktop
+                span Служба технического контроля на производстве состоит из шести человек,<br> и каждая единица мебели проходит через два поста контроля качества.
+
+
+
+
+
+
+
+
+    // end production
+
 
     // begin products
     section#products.products.section
@@ -258,9 +334,98 @@ block content
                         .products__title
                             span!=item.title
 
-
-
     // end products
+
+    // begin feedback
+    section.feedback.feedback_second.section
+        .container_center
+            .feedback__wrap
+                .feedback__content
+                    h2.feedback__title
+                        span Нужно индивидуальное производство мебели по проекту или хотите посмотреть полный каталог?
+                    .feedback__subtitle
+                        span <b>Оставьте свой телефон,</b> чтобы мы связались с вами, уточнили информацию по проекту и предоставили вам подборку под вашу задачу
+                    .feedback__form
+                        form.form.form_grid(action="send.php")
+                            //- из какой формы на сайте
+                            input(type="hidden" name="subject" value="форма: ПНужно индивидуальное производство мебели")
+                            //- проверка спама
+                            input(type="hidden" name="notspam" value="")
+
+                            .form__row
+                                input.tel(type="text", required placeholder="+7")
+                            .form__row
+                                .button
+                                    button.btn(type="submit") Получить предложение
+                            .form__row.form__row_mb-0.form__row_full
+                                .form__privacy
+                                    span Нажимая на кнопку, вы соглашаетесь на <a href="#" target="_blank">условия обработки данных</a>
+                .feedback__bg.bg
+
+    // end feedback
+
+    // begin founder
+    section#founder.founder.section.bg
+        .container_center
+            .founder__wrap
+                .founder__content
+                    h2.section__title
+                        span Мы создаем продукт, которым пользуются наши дети
+                    .section__subtitle
+                        span Я сам не так давно стал отцом и понимаю, насколько важно создать комфортную, функциональную, а главное — безопасную среду для обучения, отдыха и досуга ребенка в доме.
+                    .section__subtitle
+                        span Мы не только производим, но и сами пользуемся нашей мебелью у себя дома. Я лично отвечаю за качество наших продуктов и выполнение всех обязательств в полном объеме в указанный срок и в оговоренном бюджете.
+                    .section__subtitle
+                        span Более того, уставный капитал компании 9 000 000 рублей. Это значит, что Mamka — единственная из всех компаний на рынке индивидуальной детской мебели может гарантировать вам полную финансовую безопасность сделки.
+                    .founder__persone
+                        span Артём Подобрянский
+                    .founder__logo
+                        .founder__img.img
+                            img(src="img/founder_logo.svg")
+                        .founder__label
+                            span Сооснователь и руководитель компании
+
+    // end founder
+
+    // begin contacts
+    section#contacts.contacts.section
+        .container_center
+            .contacts__row
+                .contacts__col
+                    h2.section__title
+                        span Приезжайте в наш шоурум в Москве
+                    .section__subtitle
+                        span Мы будем рады видеть вас в нашем новом пространстве, где вы сможете ознакомиться с образцами мебели нашего производства, подобрать отделочные материалы, оценить качество австрийской фурнитуры и используемых пород дерева.
+                    .contacts__numbers
+                        .numbers
+                            .numbers__item
+                                span 150 м<sup>2</sup>
+                                small площадь шоурума
+                            .numbers__item
+                                span 800
+                                small единиц образцов
+
+                .contacts__col
+                    .video
+                        .video__bg.video__bg_large.bg(style="background-image: url('img/bg_last.webp')")
+                            .video__play.js-youtubeModal#gvrSH5z5EGQ
+                                i.icon_play
+            .contacts__row
+                .contacts__col
+                    .contacts__text
+                        span Для того чтобы менеджер смог уделить вам достаточно времени и внимания, будем признательны, если вы запишитесь на визит заранее.
+                    .contacts__link
+                        a(href="#") Записаться на визит в шоурум
+                .contacts__col
+                    .contacts__adress
+                        span Ждем вас с 11:00 до 20:00 по адресу:
+                        span <b> Москва, Проспект Мира 102, стр. 38м.<br> Алексеевская, ЖК «Парк Мира»</b>
+                        span без выходных
+                    .contacts__action
+                        a(href="tel:+74994040200") +7 499 40 40 200
+                        a.success(href="mailto:sales@mamka.moscow") sales@mamka.moscow
+
+    // end contacts
 
 
 

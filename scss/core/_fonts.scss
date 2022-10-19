@@ -1,6 +1,14 @@
-@include font-face("Literata", '../fonts/Literata/Literata-Light', 300, normal);
+// @include font-face("Literata", '../fonts/Literata/Literata-Light', 300, normal);
+// @include font-face("Literata", '../fonts/Literata/Literata-Regular', normal, normal);
+@include font-face("Literata", '../fonts/Literata/Literata-ExtraLight', 200, normal);
+// @include font-face("Literata", '../fonts/Literata/Literata-Medium', 500, normal);
+// @include font-face("Literata", '../fonts/Literata/Literata-SemiBold', 600, normal);
+// @include font-face("Literata", '../fonts/Literata/Literata-Light', 300, normal);
 
+@include font-face("Manrope", '../fonts/Manrope/Manrope-Medium', 500, normal);
+@include font-face("Manrope", '../fonts/Manrope/Manrope-ExtraLigh', 200, normal);
 @include font-face("Manrope", '../fonts/Manrope/Manrope-SemiBold', 600, normal);
+@include font-face("Manrope", '../fonts/Manrope/Manrope-Light', 300, normal);
 @include font-face("Manrope", '../fonts/Manrope/Manrope-Regular', normal, normal);
 
 @include font-face("PT Astra Serif", '../fonts/PTAstraSerif/PTAstraSerif-Italic', normal, italic);

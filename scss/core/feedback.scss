@@ -1,0 +1,139 @@
+.feedback {
+    text-align: center;
+    @media (min-width: 768px) {
+        position: relative;
+        z-index: 1;
+    }
+
+    .form__privacy span {
+        @media (min-width: 768px) {
+            font-size: 0.75em;
+        }
+    }
+
+    &__wrap {
+        position: relative;
+        background-color: #F4F2F0;
+        padding: 5em 1.25em 2.6875em;
+
+        @media (min-width: 768px) {
+            position: initial;
+            padding: 4.375em 0 0;
+
+        }
+    }
+
+    &__content {
+        @media (min-width: 768px) {
+            width: 44em;
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 1em;
+        font-family: $second_font_family;
+        margin-bottom: 1.5625em;
+        line-height: 1.295;
+        @media (min-width: 768px) {
+            line-height: 1.3236;
+        }
+
+        span {
+            font-weight: 300;
+            font-size: 1.0625em;
+            @media (min-width: 768px) {
+                font-size: 2.125em;
+
+            }
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 1.5625em;
+
+        @media (min-width: 768px) {
+            margin-bottom: 2.1875em;
+            line-height: 1.4;
+
+        }
+
+        span {
+            font-size: 0.875em;
+            @media (min-width: 768px) {
+                font-size: 1.125em;
+
+            }
+        }
+
+        b {
+            font-weight: 600;
+
+        }
+    }
+
+    &__form {
+        @media (min-width: 768px) {
+            margin-bottom: 3em;
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        top: -2.25em;
+        left: 50%;
+        transform: translateX(-50%);
+
+        background-image: url("../img/book_m.webp");
+        width: 11.875em;
+        height: 5.5em;
+
+        @media (min-width: 768px) {
+            position: initial;
+            top: auto;
+            left: auto;
+            transform: none;
+            background-image: url("../img/book.webp");
+            width: 70.9375em;
+            height: 16.9375em;
+            margin: 0 auto;
+        }
+
+    }
+
+    &_second {
+        @media (max-width: 767px) {
+            padding-top: 0;
+            margin-top: -1.375em;
+
+        }
+
+        .feedback__wrap {
+            @media (max-width: 767px) {
+                padding-bottom: 0;
+            }
+        }
+
+        .feedback__bg {
+            position: initial;
+            top: auto;
+            left: auto;
+            transform: none;
+            width: 20em;
+            height: 3.75em;
+            margin: 2.6875em -1.25em 0;
+
+            // background-image: url("../img/sofa_m.webp");
+            background-image: url("../img/sofa.webp");
+
+            @media (min-width: 768px) {
+                margin: 0;
+                width: 83.75em;
+                height: 16.5625em;
+
+            }
+        }
+    }
+
+}
