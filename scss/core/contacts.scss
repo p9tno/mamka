@@ -89,7 +89,7 @@
         }
 
         a {
-            position: relative;
+            // position: relative;
             text-decoration: none;
             color: $main_color;
             font-weight: 500;
@@ -100,14 +100,7 @@
             }
 
             &:after {
-                content: '';
-                position: absolute;
-                bottom: -0.125em;
-                left: 0;
-                width: 100%;
-                border-bottom: 0.0625em solid rgba($color_danger, 1);
-                transition: 0.3s;
-
+                border-color: $color_danger;
             }
 
             &:hover {

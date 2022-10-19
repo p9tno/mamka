@@ -650,6 +650,31 @@ body {
   content: counter(line) " ";
 }
 
+.snakeline a {
+  position: relative;
+  text-decoration: none;
+}
+.snakeline a:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  left: 0;
+  bottom: -0.075em;
+  border-bottom: 1px solid;
+  border-color: inherit;
+}
+@media (min-width: 768px) {
+  .snakeline a:after {
+    transition: width 0.3s;
+  }
+}
+@media (min-width: 768px) {
+  .snakeline a:hover:after {
+    width: 65%;
+  }
+}
+
 /* Header
  ----------------------------------------------------------------------------- */
 .header {
@@ -736,22 +761,9 @@ body {
   .callback__link a {
     text-decoration: none;
     color: #2E8F7E;
-    position: relative;
-  }
-  .callback__link a:after {
-    content: "";
-    position: absolute;
-    bottom: -0.075em;
-    left: 0;
-    width: 100%;
-    border-bottom: 0.0625em solid #2E8F7E;
-    transition: 0.3s;
   }
   .callback__link a:hover {
     color: #932538;
-  }
-  .callback__link a:hover:after {
-    border-bottom: 0.0625em solid #932538;
   }
 }
 .phone {
@@ -800,13 +812,13 @@ body {
 .firstscreen {
   padding-top: 10.625em;
   padding-bottom: 18.75em;
-  background-image: url("../img/firstscreen_m.webp");
+  background-image: url("../img/firstscreen_m.jpg");
 }
 @media (min-width: 768px) {
   .firstscreen {
     padding-top: 10.3125em;
     padding-bottom: 19.375em;
-    background-image: url("../img/firstscreen.webp");
+    background-image: url("../img/firstscreen.jpg");
   }
 }
 .firstscreen__content {
@@ -1511,7 +1523,7 @@ body {
 }
 @media (min-width: 768px) {
   .team {
-    background-image: url("../img/team.webp");
+    background-image: url("../img/team.jpg");
     padding-top: 37.9375em;
     padding-bottom: 6.875em;
   }
@@ -2196,7 +2208,7 @@ body {
 @media (max-width: 767px) {
   .founder {
     height: 44.375em;
-    background-image: url("../img/lider_m.webp");
+    background-image: url("../img/lider_m.jpg");
     margin-top: 0.625em;
     margin-bottom: 17em;
   }
@@ -2206,7 +2218,7 @@ body {
     margin-top: 3.75em;
     padding-top: 8.4375em;
     padding-bottom: 6.8125em;
-    background-image: url("../img/lider.webp");
+    background-image: url("../img/lider.jpg");
   }
 }
 .founder__wrap {
@@ -2390,7 +2402,6 @@ body {
   }
 }
 .contacts__link a {
-  position: relative;
   text-decoration: none;
   color: #020203;
   font-weight: 500;
@@ -2402,13 +2413,7 @@ body {
   }
 }
 .contacts__link a:after {
-  content: "";
-  position: absolute;
-  bottom: -0.125em;
-  left: 0;
-  width: 100%;
-  border-bottom: 0.0625em solid #932538;
-  transition: 0.3s;
+  border-color: #932538;
 }
 .contacts__link a:hover {
   color: #932538;
@@ -2678,18 +2683,11 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 .footer__content a {
-  position: relative;
   text-decoration: none;
   color: #ffffff;
 }
 .footer__content a:after {
-  content: "";
-  position: absolute;
-  bottom: -0.125em;
-  left: 0;
-  width: 100%;
-  border-bottom: 0.0625em solid rgba(255, 255, 255, 0.3);
-  transition: 0.3s;
+  border-color: rgba(255, 255, 255, 0.3);
 }
 .footer .logo {
   width: 10.625em;

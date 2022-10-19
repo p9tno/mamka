@@ -150,3 +150,34 @@ body {
 		}
 	}
 }
+
+.snakeline {
+	a {
+		position: relative;
+		text-decoration: none;
+
+		&:after {
+			content: '';
+			position: absolute;
+			display: inline-block;
+			width: 100%;
+			left: 0;
+			bottom: -0.075em;
+			border-bottom: 1px solid;
+			border-color: inherit;
+
+			@media (min-width: 768px) {
+				transition: width 0.3s;
+			}
+		}
+
+		@media (min-width: 768px) {
+			&:hover {
+				&:after {
+					width: 65%;
+				}
+			}
+		}
+
+	}
+}

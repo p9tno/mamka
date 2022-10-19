@@ -134,19 +134,11 @@
 		}
 
 		a {
-			position: relative;
 			text-decoration: none;
 			color: $color_white;
 
 			&:after {
-				content: '';
-				position: absolute;
-				bottom: -0.125em;
-				left: 0;
-				width: 100%;
-				border-bottom: 0.0625em solid rgba($color_white, 0.3);
-				transition: 0.3s;
-
+				border-color: rgba($color_white, 0.3);
 			}
 		}
 	}
