@@ -1,0 +1,21 @@
+extends ../layout/layout.pug
+block variable
+    -var path = '../';
+
+block content
+
+    // begin thank
+    section#thank.thank.section.bg
+        .container_center
+            .thank__wrap
+                .thank__content
+                    h1.section__title
+                        span Ваша заявка<br> успешно оформлена!
+                    .section__subtitle
+                        span Мы обязательно свяжемся с вами в ближайшее время, чтобы обсудить ваши задачи.
+                    .section__subtitle
+                        span А пока предлагаем вам подписаться на наш Инстаграм и посмотреть сотни реализованных проектов и новых идей для вашей идеальной детской комнаты
+                    .thank__link
+                        a.btn_border.btn_border_success(href="#") @mamka.kids 
+
+    // end thank

@@ -7,27 +7,35 @@
     <meta name="description" content="description"/>
     <meta name="keywords" content="keywords"/>
     <link rel="icon" href="favicon.ico" type="/image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="css/aos.css"/>
     <link rel="stylesheet" type="text/css" href="css/fancybox.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <title>Document</title>
   </head>
   <body>
     <div class="wrapper">
+      <div class="preloader" id="preloader">
+        <div class="preloader__content">
+          <div class="preloader__item preloader__first"></div>
+          <div class="preloader__item preloader__second"></div>
+          <div class="preloader__item preloader__third"></div>
+        </div>
+      </div>
       <header class="header">
         <div class="header__row">
-          <div class="header__col">       <a class="logo img" href="/"><img src="img/logo_dark.png"/></a>
+          <div class="header__col">       <a class="logo img" href="/"><img src="/img/logo_dark.png"/></a>
             <div class="logo__descpiption"><span>Лидер в создании детских пространств с собственным производством полного цикла</span></div>
           </div>
           <div class="header__col desktop">
             <div class="adress">
-              <div class="adress__img img"><img src="img/adress.png"/></div>
+              <div class="adress__img img"><img src="/img/adress.png"/></div>
               <div class="adress__text"><span>Шоурум в Москве: Проспект Мира, 102, стр. 38 ЖК «Парк Мира»</span></div>
             </div>
           </div>
           <div class="header__col desktop">
             <div class="callback">
               <div class="callback__label"><span>Вы дизайнер-интерьера? Сэкономьте ваше время</span></div>
-              <div class="callback__link snakeline"><a href="#">Закажите наш обратный звонок</a></div>
+              <div class="callback__link snakeline"><a class="pop_up_js" href="#">Закажите наш обратный звонок</a></div>
             </div>
           </div>
           <div class="header__col">
@@ -44,7 +52,7 @@
             <div class="firstscreen__content">
               <h1 class="section__title"><span>Дизайн детских пространств для дома и производство мебели премиум-класса </span></h1>
               <div class="section__subtitle desktop"><span>Разработаем дизайн-проект детской комнаты, предоставим полную техническую документацию и укомплектуем мебелью премиум-класса, изготовленную на собственном производстве</span></div>
-              <div class="firstscreen__action"><a class="btn" href="#">Рассказать о своих пожеланиях</a></div>
+              <div class="firstscreen__action"><a class="btn pop_up_2_js" href="#">Рассказать о своих пожеланиях</a></div>
               <div class="firstscreen__extra">
                 <div class="extra">
                   <div class="extra__wrap">
@@ -60,7 +68,7 @@
         <!-- begin clients-->
         <section class="clients section" id="clients">
           <div class="container_center">
-            <h2 class="section__title"><span>Более 1 000 проектов реализовано за 5 лет</span></h2>
+            <h2 class="section__title" data-aos="fade-up"><span>Более 1 000 проектов реализовано за 5 лет</span></h2>
             <div class="section__subtitle"><span>Среди наших клиентов известные актеры, спортсмены, участники списка Forbes. Но в первую очередь — это любящие родители, стремящихся создать комфортные и безопасные пространства для своих детей</span></div>
             <div class="clients__list">
               <!-- start item-->
@@ -82,7 +90,7 @@
                 <div class="clients__video">
                   <div class="video">
                     <div class="video__bg bg" style="background-image: url('img/bg_1.webp')">
-                      <div class="video__play js-youtubeModal" id="gvrSH5z5EGQ"><i class="icon_play"></i></div>
+                      <div class="video__play js-youtubeModal" id="FgLhf1NXp_A"><i class="icon_play"></i></div>
                     </div>
                   </div>
                 </div>
@@ -107,7 +115,7 @@
                 <div class="clients__video">
                   <div class="video">
                     <div class="video__bg bg" style="background-image: url('img/bg_2.webp')">
-                      <div class="video__play js-youtubeModal" id="gvrSH5z5EGQ"><i class="icon_play"></i></div>
+                      <div class="video__play js-youtubeModal" id="s8l6X94DBNA"><i class="icon_play"></i></div>
                     </div>
                   </div>
                 </div>
@@ -132,7 +140,7 @@
                 <div class="clients__video">
                   <div class="video">
                     <div class="video__bg bg" style="background-image: url('img/bg_3.webp')">
-                      <div class="video__play js-youtubeModal" id="gvrSH5z5EGQ"><i class="icon_play"></i></div>
+                      <div class="video__play js-youtubeModal" id="BMI2GMTzetw"><i class="icon_play"></i></div>
                     </div>
                   </div>
                 </div>
@@ -146,32 +154,32 @@
         <section class="projects section" id="projects">
           <div class="container_center">
             <div class="projects__grid">
-              <div class="projects__item"><a class="img" href="img/project_1.webp" data-fancybox="data-fancybox" data-type="image"><img src="img/project_1.webp" loading="lazy"/>
+              <div class="projects__item"><a class="img" href="img/project_1.jpg" data-fancybox="data-fancybox" data-type="image"><img src="img/project_1.webp" loading="lazy"/>
                   <div class="projects__content">
                     <div class="projects__icon"><i class="icon_arrow"></i></div>
                     <div class="projects__title"><span>Детскаяна<br> 6 детей</span></div>
                   </div></a></div>
-              <div class="projects__item"><a class="img" href="img/project_2.webp" data-fancybox="data-fancybox" data-type="image"><img src="img/project_2.webp" loading="lazy"/>
+              <div class="projects__item"><a class="img" href="img/project_2.jpg" data-fancybox="data-fancybox" data-type="image"><img src="img/project_2.webp" loading="lazy"/>
                   <div class="projects__content">
                     <div class="projects__icon"><i class="icon_arrow"></i></div>
                     <div class="projects__title"><span>Дом Бохо</span></div>
                   </div></a></div>
-              <div class="projects__item"><a class="img" href="img/project_3.webp" data-fancybox="data-fancybox" data-type="image"><img src="img/project_3.webp" loading="lazy"/>
+              <div class="projects__item"><a class="img" href="img/project_3.jpg" data-fancybox="data-fancybox" data-type="image"><img src="img/project_3.webp" loading="lazy"/>
                   <div class="projects__content">
                     <div class="projects__icon"><i class="icon_arrow"></i></div>
                     <div class="projects__title"><span>2-уровневая<br> комната для девочки</span></div>
                   </div></a></div>
-              <div class="projects__item"><a class="img" href="img/project_4.webp" data-fancybox="data-fancybox" data-type="image"><img src="img/project_4.webp" loading="lazy"/>
+              <div class="projects__item"><a class="img" href="img/project_4.jpg" data-fancybox="data-fancybox" data-type="image"><img src="img/project_4.webp" loading="lazy"/>
                   <div class="projects__content">
                     <div class="projects__icon"><i class="icon_arrow"></i></div>
                     <div class="projects__title"><span>Комната для разнополых деток</span></div>
                   </div></a></div>
-              <div class="projects__item"><a class="img" href="img/project_5.webp" data-fancybox="data-fancybox" data-type="image"><img src="img/project_5.webp" loading="lazy"/>
+              <div class="projects__item"><a class="img" href="img/project_5.jpg" data-fancybox="data-fancybox" data-type="image"><img src="img/project_5.webp" loading="lazy"/>
                   <div class="projects__content">
                     <div class="projects__icon"><i class="icon_arrow"></i></div>
                     <div class="projects__title"><span>Домик для юного принца</span></div>
                   </div></a></div>
-              <div class="projects__item"><a class="img" href="img/project_6.webp" data-fancybox="data-fancybox" data-type="image"><img src="img/project_6.webp" loading="lazy"/>
+              <div class="projects__item"><a class="img" href="img/project_6.jpg" data-fancybox="data-fancybox" data-type="image"><img src="img/project_6.webp" loading="lazy"/>
                   <div class="projects__content">
                     <div class="projects__icon"><i class="icon_arrow"></i></div>
                     <div class="projects__title"><span>Комната<br> для девочки</span></div>
@@ -185,8 +193,8 @@
           <div class="container_center">
             <div class="development__content">
               <div class="development__left">
-                <h2 class="section__title section__title_sm"><span>Получите коммерческое предложение на разработку дизайн-проекта для вашей детской</span><small>в 3-х ценовых вариантах</small></h2>
-                <div class="development__offer bg"></div>
+                <h2 class="section__title section__title_sm" data-aos="fade-up"><span>Получите коммерческое предложение на разработку дизайн-проекта для вашей детской</span><small>в 3-х ценовых вариантах</small></h2>
+                <div class="development__offer bg" data-aos="fade-up"></div>
               </div>
               <div class="development__right">
                 <div class="development__item">
@@ -202,10 +210,10 @@
                   <div class="development__label"><span><b>Оставьте свой телефон,</b><br> чтобы мы связались с вами, уточнили информацию по проекту и предоставили вам подборку под вашу задачу</span></div>
                   <div class="development__form">
                     <form class="form" action="send.php">
-                      <input type="hidden" name="subject" value="форма: Получить предложение"/>
+                      <input type="hidden" name="subject" value="форма: Получите коммерческое предложение на разработку дизайн-проекта для вашей детской"/>
                       <input type="hidden" name="notspam" value=""/>
                       <div class="form__row">
-                        <input class="tel" type="text" required="required" placeholder="+7"/>
+                        <input class="tel" type="text" name="phone" required="required" placeholder="+7"/>
                       </div>
                       <div class="form__row">
                         <div class="button">
@@ -213,7 +221,7 @@
                         </div>
                       </div>
                       <div class="form__row form__row_mb-0">
-                        <div class="form__privacy"><span>Нажимая на кнопку, вы соглашаетесь на <a href="#" target="_blank">условия обработки данных</a></span></div>
+                        <div class="form__privacy"><span>Нажимая на кнопку, вы соглашаетесь на <a class="privacy_policy_js" href="#">условия обработки данных</a></span></div>
                       </div>
                     </form>
                   </div>
@@ -238,7 +246,7 @@
             <div class="section__subtitle section__subtitle_team"><span>это эксперты в области дизайна, проектирования и производства детских комнат в квартире и частном доме под ключ</span></div>
             <div class="section__subtitle"><span>Над созданием каждого объекта работает не один специалист, а целый проектный отдел, включающий инженеров, архитекторов, столяров, дизайнеров и менеджеров</span></div>
           </div>
-          <div class="team__extra">
+          <div class="team__extra" data-aos="fade-left">
             <div class="extra">
               <div class="extra__wrap">
                 <div class="extra__content"><i>240<small>+</small></i><span>реализовано командой лишь за прошлый год</span></div>
@@ -250,13 +258,13 @@
         <!-- begin statistics-->
         <section class="statistics section" id="statistics">
           <div class="container_center">
-            <h2 class="section__title section__title_sm"><span>Задаем тренды в индустрии и являемся самым популярным производителем детской мебели премиум-качества в России</span></h2>
+            <h2 class="section__title section__title_sm" data-aos="fade-up"><span>Задаем тренды в индустрии и являемся самым популярным производителем детской мебели премиум-качества в России</span></h2>
             <div class="statistics__top">
               <div class="screenshots">
-                <div class="screenshots__item bg"></div>
-                <div class="screenshots__item bg"></div>
-                <div class="screenshots__item bg"></div>
-                <div class="screenshots__item bg"></div>
+                <div class="screenshots__item bg" data-aos="fade-left" data-aos-delay="900"></div>
+                <div class="screenshots__item bg" data-aos="fade-left" data-aos-delay="600"></div>
+                <div class="screenshots__item bg" data-aos="fade-left" data-aos-delay="300"></div>
+                <div class="screenshots__item bg" data-aos="fade-left"></div>
               </div>
               <div class="caption caption_icon">
                 <div class="caption__number"><span>9 000 000</span></div>
@@ -266,7 +274,7 @@
             </div>
             <div class="statistics__bottom">
               <div class="messenger bg">
-                <div class="messenger__phone bg"></div>
+                <div class="messenger__phone bg" data-aos="fade-up" data-aos-delay="600"></div>
               </div>
               <div class="caption">
                 <div class="caption__number"><span>220 000+</span></div>
@@ -286,10 +294,10 @@
                 <div class="feedback__subtitle"><span><b>Оставьте свой телефон,</b> чтобы мы связались с вами, уточнили информацию по проекту и предоставили вам подборку под вашу задачу</span></div>
                 <div class="feedback__form">
                   <form class="form form_grid" action="send.php">
-                    <input type="hidden" name="subject" value="форма: Получить подборку готовых идей"/>
+                    <input type="hidden" name="subject" value="форма: Хотите получить подборку готовых идей и интерьерных решений под ваш проект?"/>
                     <input type="hidden" name="notspam" value=""/>
                     <div class="form__row">
-                      <input class="tel" type="text" required="required" placeholder="+7"/>
+                      <input class="tel" type="text" name="phone" required="required" placeholder="+7"/>
                     </div>
                     <div class="form__row">
                       <div class="button">
@@ -297,7 +305,7 @@
                       </div>
                     </div>
                     <div class="form__row form__row_mb-0 form__row_full">
-                      <div class="form__privacy"><span>Нажимая на кнопку, вы соглашаетесь на <a href="#" target="_blank">условия обработки данных</a></span></div>
+                      <div class="form__privacy"><span>Нажимая на кнопку, вы соглашаетесь на <a class="privacy_policy_js" href="#">условия обработки данных</a></span></div>
                     </div>
                   </form>
                 </div>
@@ -312,10 +320,10 @@
           <div class="container_center">
             <div class="production__content">
               <div class="production__left"> 
-                <h2 class="section__title section__title_sm"><span>Производим индивидуальную детскую мебель на собственной фабрике на Урале</span></h2>
+                <h2 class="section__title section__title_sm" data-aos="fade-up"><span>Производим индивидуальную детскую мебель на собственной фабрике на Урале</span></h2>
                 <div class="production__square"><span>4 000 м<sup>2</sup></span><small>площадь производства</small></div>
                 <div class="production__film desktop">
-                  <div class="production__img img"><img src="img/chair.png"/></div>
+                  <div class="production__img img" data-aos="fade-right"><img src="img/chair.png"/></div>
                   <div class="production__label">
                     <div class="production__icon"><img src="img/play_border.svg"/></div><span>Посмотрите мини-фильм<br> о фабрике-производителе<br> «Мамка»</span>
                   </div>
@@ -341,7 +349,7 @@
             <div class="production__video">
               <div class="video">
                 <div class="video__bg video__bg_full bg" style="background-image: url('img/bg.jpg')">
-                  <div class="video__play js-youtubeModal" id="gvrSH5z5EGQ"><i class="icon_play"></i></div>
+                  <div class="video__play js-youtubeModal" id="OgUKmjwCuuI"><i class="icon_play"></i></div>
                 </div>
               </div>
             </div>
@@ -352,7 +360,7 @@
         <!-- begin products-->
         <section class="products section" id="products">
           <div class="container_center">
-            <h2 class="section__title section__title_sm"><span>Более 100 категорий и наименований продукции в ассортименте и под заказ с полной гарантией производителя</span></h2>
+            <h2 class="section__title section__title_sm" data-aos="fade-up"><span>Более 100 категорий и наименований продукции в ассортименте и под заказ с полной гарантией производителя</span></h2>
             <div class="products__grid">
               <div class="products__item bg" style="background-image: url('img/cat_1.webp')">
                 <div class="products__title"><span>Кровати</span></div>
@@ -385,10 +393,10 @@
                 <div class="feedback__subtitle"><span><b>Оставьте свой телефон,</b> чтобы мы связались с вами, уточнили информацию по проекту и предоставили вам подборку под вашу задачу</span></div>
                 <div class="feedback__form">
                   <form class="form form_grid" action="send.php">
-                    <input type="hidden" name="subject" value="форма: ПНужно индивидуальное производство мебели"/>
+                    <input type="hidden" name="subject" value="форма: Нужно индивидуальное производство мебели по проекту или хотите посмотреть полный каталог?"/>
                     <input type="hidden" name="notspam" value=""/>
                     <div class="form__row">
-                      <input class="tel" type="text" required="required" placeholder="+7"/>
+                      <input class="tel" type="text" name="phone" required="required" placeholder="+7"/>
                     </div>
                     <div class="form__row">
                       <div class="button">
@@ -396,7 +404,7 @@
                       </div>
                     </div>
                     <div class="form__row form__row_mb-0 form__row_full">
-                      <div class="form__privacy"><span>Нажимая на кнопку, вы соглашаетесь на <a href="#" target="_blank">условия обработки данных</a></span></div>
+                      <div class="form__privacy"><span>Нажимая на кнопку, вы соглашаетесь на <a class="privacy_policy_js" href="#">условия обработки данных</a></span></div>
                     </div>
                   </form>
                 </div>
@@ -411,7 +419,7 @@
           <div class="container_center">
             <div class="founder__wrap">
               <div class="founder__content">
-                <h2 class="section__title"><span>Мы создаем продукт, которым пользуются наши дети</span></h2>
+                <h2 class="section__title" data-aos="fade-up"><span>Мы создаем продукт, которым пользуются наши дети</span></h2>
                 <div class="section__subtitle"><span>Я сам не так давно стал отцом и понимаю, насколько важно создать комфортную, функциональную, а главное — безопасную среду для обучения, отдыха и досуга ребенка в доме.</span></div>
                 <div class="section__subtitle"><span>Мы не только производим, но и сами пользуемся нашей мебелью у себя дома. Я лично отвечаю за качество наших продуктов и выполнение всех обязательств в полном объеме в указанный срок и в оговоренном бюджете.</span></div>
                 <div class="section__subtitle"><span>Более того, уставный капитал компании 9 000 000 рублей. Это значит, что Mamka — единственная из всех компаний на рынке индивидуальной детской мебели может гарантировать вам полную финансовую безопасность сделки.</span></div>
@@ -430,7 +438,7 @@
           <div class="container_center">
             <div class="contacts__row">
               <div class="contacts__col">
-                <h2 class="section__title"><span>Приезжайте в наш шоурум в Москве</span></h2>
+                <h2 class="section__title" data-aos="fade-up"><span>Приезжайте в наш шоурум в Москве</span></h2>
                 <div class="section__subtitle"><span>Мы будем рады видеть вас в нашем новом пространстве, где вы сможете ознакомиться с образцами мебели нашего производства, подобрать отделочные материалы, оценить качество австрийской фурнитуры и используемых пород дерева.</span></div>
                 <div class="contacts__numbers">
                   <div class="numbers">
@@ -442,7 +450,7 @@
               <div class="contacts__col">
                 <div class="video">
                   <div class="video__bg video__bg_large bg" style="background-image: url('img/bg_last.jpg')">
-                    <div class="video__play js-youtubeModal" id="gvrSH5z5EGQ"><i class="icon_play"></i></div>
+                    <div class="video__play js-youtubeModal" id="96-8ZVH-pIs"><i class="icon_play"></i></div>
                   </div>
                 </div>
               </div>
@@ -450,11 +458,11 @@
             <div class="contacts__row">
               <div class="contacts__col">
                 <div class="contacts__text"><span>Для того чтобы менеджер смог уделить вам достаточно времени и внимания, будем признательны, если вы запишитесь на визит заранее.</span></div>
-                <div class="contacts__link snakeline"><a href="#">Записаться на визит в шоурум</a></div>
+                <div class="contacts__link snakeline"><a class="pop_up_3_js" href="#">Записаться на визит в шоурум</a></div>
               </div>
               <div class="contacts__col">
                 <div class="contacts__adress"><span>Ждем вас с 11:00 до 20:00 по адресу:</span><span><b> Москва, Проспект Мира 102, стр. 38м.<br> Алексеевская, ЖК «Парк Мира»</b></span><span>без выходных</span></div>
-                <div class="contacts__action"><a href="tel:+74994040200">+7 499 40 40 200</a><a class="success" href="mailto:sales@mamka.moscow">sales@mamka.moscow</a></div>
+                <div class="contacts__action"><a class="btn_border" href="tel:+74994040200">+7 499 40 40 200</a><a class="btn_border btn_border_success" href="mailto:sales@mamka.moscow">sales@mamka.moscow</a></div>
               </div>
             </div>
           </div>
@@ -464,12 +472,12 @@
       <footer class="footer">
         <div class="footer__row">
           <div class="container_center al_c">
-            <div class="footer__col"><a class="logo img" href="/"><img src="img/logo_footer.png"/></a>
+            <div class="footer__col"><a class="logo img" href="/"><img src="/img/logo_footer.png"/></a>
               <div class="logo__descpiption"><span>Лидер в создании детских пространств с собственным производством полного цикла</span></div>
             </div>
             <div class="footer__col">
               <div class="footer__content pb border snakeline"> <span>Производство и отдел продаж</span><a href="tel:+74994040200">+7 499 40 40 200</a><a href="mailto:sale@mamka.moscow">sale@mamka.moscow</a></div>
-              <div class="footer__content pt snakeline"> <a href="#">Дизайнерам интерьеров</a></div>
+              <div class="footer__content pt snakeline"> <a class="pop_up_js" href="#">Дизайнерам интерьеров</a></div>
             </div>
           </div>
         </div>
@@ -489,7 +497,7 @@
               </div>
             </div>
             <div class="footer__col">
-              <div class="footer__content snakeline"> <a href="#">Политика конфиденциальности</a><span>Разработка сайта — <a href="#" target="_blank">Александр Воробьев</a></span></div>
+              <div class="footer__content snakeline"> <a class="privacy_policy_js" href="#">Политика конфиденциальности</a><span>Разработка сайта — <a href="#" target="_blank">Александр Воробьев</a></span></div>
             </div>
           </div>
         </div>
@@ -514,6 +522,141 @@
         </div>
       </div>
       <!-- End modal info-->
+      <!-- Begin Modal privacy_policy-->
+      <div class="modal fade privacy_policy" id="privacy_policy">
+        <div class="modal-dialog">
+          <div class="modal-content"><a class="modal-close" href="#" data-dismiss="modal"></a>
+            <div class="modal-body">
+              <div class="privacy_policy__content">
+                <h2> <span>Политика конфиденциальности</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End modal privacy_policy-->
+      <!-- Begin Modal pop_up-->
+      <div class="modal fade pop_up" id="pop_up">
+        <div class="modal-dialog">
+          <div class="modal-content"><a class="desktop modal-close" href="#" data-dismiss="modal"></a>
+            <div class="modal-body">
+              <div class="pop_up__content">
+                <div class="pop_up__img bg"></div>
+                <div class="pop_up__form"><a class="mobile modal-close" href="#" data-dismiss="modal"></a>
+                  <div class="pop_up__title"><span>Оставьте<br> ваши контакты</span></div>
+                  <div class="pop_up__description"><span>Наш менеджер свяжется с вами в ближайшее время, чтобы уточнить все детали вашего проекта и подготовить коммерческое предложение</span></div>
+                  <form class="form" action="send.php">
+                    <input type="hidden" name="subject" value="форма: Закажите наш обратный звонок"/>
+                    <input type="hidden" name="notspam" value=""/>
+                    <div class="form__row">
+                      <input class="tel" type="text" name="phone" required="required" placeholder="+7"/>
+                    </div>
+                    <div class="form__row">
+                      <div class="button">
+                        <button class="btn" type="submit">Получить предложение</button>
+                      </div>
+                    </div>
+                    <div class="form__row form__row_mb-0">
+                      <div class="form__privacy"><span>Нажимая на кнопку, вы соглашаетесь на <a href="#" class="privacy_policy_js">условия обработки данных</a></span></div>
+                    </div>
+                  </form>
+                </div>
+                <div class="pop_up__info">
+                  <div class="pop_up__persone"><span>Лазарева Виктория</span></div>
+                  <div class="pop_up__logo">
+                    <div class="pop_up__logo-img img"><img src="/img/logo_pop_up.svg"/></div>
+                    <div class="pop_up__label"><span>Менеджер по работе<br> с партнерами</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End modal pop_up-->
+      <!-- Begin Modal pop_up_2-->
+      <div class="modal fade pop_up pop_up_2" id="pop_up_2">
+        <div class="modal-dialog">
+          <div class="modal-content"><a class="desktop modal-close" href="#" data-dismiss="modal"></a>
+            <div class="modal-body">
+              <div class="pop_up__content">
+                <div class="pop_up__img bg"></div>
+                <div class="pop_up__form"><a class="mobile modal-close" href="#" data-dismiss="modal"></a>
+                  <div class="pop_up__title"><span>Оставьте<br> ваши контакты</span></div>
+                  <div class="pop_up__description"><span>Наш менеджер свяжется с вами в ближайшее время, чтобы уточнить все детали вашего проекта и подготовить коммерческое предложение</span></div>
+                  <form class="form" action="send.php">
+                    <input type="hidden" name="subject" value="форма: Рассказать о своих пожеланиях"/>
+                    <input type="hidden" name="notspam" value=""/>
+                    <div class="form__row">
+                      <input class="tel" type="text" name="phone" required="required" placeholder="+7"/>
+                    </div>
+                    <div class="form__row">
+                      <div class="button">
+                        <button class="btn" type="submit">Получить предложение</button>
+                      </div>
+                    </div>
+                    <div class="form__row form__row_mb-0">
+                      <div class="form__privacy"><span>Нажимая на кнопку, вы соглашаетесь на <a href="#" class="privacy_policy_js">условия обработки данных</a></span></div>
+                    </div>
+                  </form>
+                </div>
+                <div class="pop_up__info">
+                  <div class="pop_up__persone"><span>Татьяна Киселёва</span></div>
+                  <div class="pop_up__logo">
+                    <div class="pop_up__logo-img img"><img src="img/logo_pop_up.svg"/></div>
+                    <div class="pop_up__label"><span>Менеджер по работе<br> с клиентами</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End modal pop_up_2-->
+      <!-- Begin Modal pop_up_3-->
+      <div class="modal fade pop_up pop_up_3" id="pop_up_3">
+        <div class="modal-dialog">
+          <div class="modal-content"><a class="desktop modal-close" href="#" data-dismiss="modal"></a>
+            <div class="modal-body">
+              <div class="pop_up__content">
+                <div class="pop_up__img bg"></div>
+                <div class="pop_up__form"><a class="mobile modal-close" href="#" data-dismiss="modal"></a>
+                  <div class="pop_up__title"><span>Оставьте<br> ваши контакты</span></div>
+                  <div class="pop_up__description"><span>Наш менеджер свяжется с вами в ближайшее время, чтобы уточнить все детали вашего проекта и подготовить коммерческое предложение</span></div>
+                  <form class="form" action="send.php">
+                    <input type="hidden" name="subject" value="форма: Записаться на визит в шоурум"/>
+                    <input type="hidden" name="notspam" value=""/>
+                    <div class="form__row">
+                      <input class="tel" type="text" name="phone" required="required" placeholder="+7"/>
+                    </div>
+                    <div class="form__row">
+                      <div class="button">
+                        <button class="btn" type="submit">Получить предложение</button>
+                      </div>
+                    </div>
+                    <div class="form__row form__row_mb-0">
+                      <div class="form__privacy"><span>Нажимая на кнопку, вы соглашаетесь на <a href="#" class="privacy_policy_js">условия обработки данных</a></span></div>
+                    </div>
+                  </form>
+                </div>
+                <div class="pop_up__info">
+                  <div class="pop_up__persone"><span>Биккалиева Дарига</span></div>
+                  <div class="pop_up__logo">
+                    <div class="pop_up__logo-img img"><img src="img/logo_pop_up.svg"/></div>
+                    <div class="pop_up__label"><span>Менеджер по работе<br> с клиентами</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End modal pop_up_3-->
       <script src="js/jquery.js"></script>
       <script src="js/form.js"></script>
       <script src="js/modal.js"></script>

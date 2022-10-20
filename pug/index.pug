@@ -10,7 +10,7 @@ block content
                 .section__subtitle.desktop
                     span Разработаем дизайн-проект детской комнаты, предоставим полную техническую документацию и укомплектуем мебелью премиум-класса, изготовленную на собственном производстве
                 .firstscreen__action
-                    a.btn(href="#") Рассказать о своих пожеланиях
+                    a.btn.pop_up_2_js(href="#") Рассказать о своих пожеланиях
                 .firstscreen__extra
                     .extra
                         .extra__wrap
@@ -24,7 +24,7 @@ block content
     // begin clients
     section#clients.clients.section
         .container_center
-            h2.section__title
+            h2.section__title(data-aos="fade-up")
                 span Более 1 000 проектов реализовано за 5 лет
             .section__subtitle
                 span Среди наших клиентов известные актеры, спортсмены, участники списка Forbes. Но в первую очередь — это любящие родители, стремящихся создать комфортные и безопасные пространства для своих детей
@@ -49,7 +49,7 @@ block content
                     .clients__video
                         .video
                             .video__bg.bg(style="background-image: url('img/bg_1.webp')")
-                                .video__play.js-youtubeModal#gvrSH5z5EGQ
+                                .video__play.js-youtubeModal#FgLhf1NXp_A
                                     i.icon_play
 
 
@@ -74,7 +74,7 @@ block content
                     .clients__video
                         .video
                             .video__bg.bg(style="background-image: url('img/bg_2.webp')")
-                                .video__play.js-youtubeModal#gvrSH5z5EGQ
+                                .video__play.js-youtubeModal#s8l6X94DBNA
                                     i.icon_play
 
 
@@ -99,7 +99,7 @@ block content
                     .clients__video
                         .video
                             .video__bg.bg(style="background-image: url('img/bg_3.webp')")
-                                .video__play.js-youtubeModal#gvrSH5z5EGQ
+                                .video__play.js-youtubeModal#BMI2GMTzetw
                                     i.icon_play
 
 
@@ -118,7 +118,7 @@ block content
                 each item in [ {number: '1', title: 'Детскаяна<br> 6 детей'}, {number: '2', title: 'Дом Бохо'}, {number: '3', title: '2-уровневая<br> комната для девочки'}, {number: '4', title: 'Комната для разнополых деток'}, {number: '5', title: 'Домик для юного принца'}, {number: '6', title: 'Комната<br> для девочки'} ]
 
                     .projects__item
-                        a.img(href="img/project_"+item.number+".webp" data-fancybox data-type="image")
+                        a.img(href="img/project_"+item.number+".jpg" data-fancybox data-type="image")
                             img(src="img/project_"+item.number+".webp" loading="lazy")
                             .projects__content
                                 .projects__icon
@@ -134,10 +134,10 @@ block content
             .development__content
 
                 .development__left
-                    h2.section__title.section__title_sm
+                    h2.section__title.section__title_sm(data-aos="fade-up")
                         span Получите коммерческое предложение на разработку дизайн-проекта для вашей детской
                         small в 3-х ценовых вариантах
-                    .development__offer.bg
+                    .development__offer.bg(data-aos="fade-up")
 
 
 
@@ -162,18 +162,18 @@ block content
                         .development__form
                             form.form(action="send.php")
                                 //- из какой формы на сайте
-                                input(type="hidden" name="subject" value="форма: Получить предложение")
+                                input(type="hidden" name="subject" value="форма: Получите коммерческое предложение на разработку дизайн-проекта для вашей детской")
                                 //- проверка спама
                                 input(type="hidden" name="notspam" value="")
 
                                 .form__row
-                                    input.tel(type="text", required placeholder="+7")
+                                    input.tel(type="text", name="phone" required placeholder="+7")
                                 .form__row
                                     .button
                                         button.btn(type="submit") Получить предложение
                                 .form__row.form__row_mb-0
                                     .form__privacy
-                                        span Нажимая на кнопку, вы соглашаетесь на <a href="#" target="_blank">условия обработки данных</a>
+                                        span Нажимая на кнопку, вы соглашаетесь на <a class="privacy_policy_js" href="#">условия обработки данных</a>
 
                 .development__time
                     .time
@@ -199,7 +199,7 @@ block content
                 span это эксперты в области дизайна, проектирования и производства детских комнат в квартире и частном доме под ключ
             .section__subtitle
                 span Над созданием каждого объекта работает не один специалист, а целый проектный отдел, включающий инженеров, архитекторов, столяров, дизайнеров и менеджеров
-        .team__extra
+        .team__extra(data-aos="fade-left")
             .extra
                 .extra__wrap
                     .extra__content
@@ -215,14 +215,14 @@ block content
     // begin statistics
     section#statistics.statistics.section
         .container_center
-            h2.section__title.section__title_sm
+            h2.section__title.section__title_sm(data-aos="fade-up")
                 span Задаем тренды в индустрии и являемся самым популярным производителем детской мебели премиум-качества в России
             .statistics__top
                 .screenshots
-                    .screenshots__item.bg
-                    .screenshots__item.bg
-                    .screenshots__item.bg
-                    .screenshots__item.bg
+                    .screenshots__item.bg(data-aos="fade-left" data-aos-delay="900")
+                    .screenshots__item.bg(data-aos="fade-left" data-aos-delay="600")
+                    .screenshots__item.bg(data-aos="fade-left" data-aos-delay="300")
+                    .screenshots__item.bg(data-aos="fade-left")
 
                 .caption.caption_icon
                     .caption__number
@@ -234,7 +234,7 @@ block content
 
             .statistics__bottom
                 .messenger.bg
-                    .messenger__phone.bg
+                    .messenger__phone.bg(data-aos="fade-up" data-aos-delay="600")
                 .caption
                     .caption__number
                         span 220 000+
@@ -258,18 +258,18 @@ block content
                     .feedback__form
                         form.form.form_grid(action="send.php")
                             //- из какой формы на сайте
-                            input(type="hidden" name="subject" value="форма: Получить подборку готовых идей")
+                            input(type="hidden" name="subject" value="форма: Хотите получить подборку готовых идей и интерьерных решений под ваш проект?")
                             //- проверка спама
                             input(type="hidden" name="notspam" value="")
 
                             .form__row
-                                input.tel(type="text", required placeholder="+7")
+                                input.tel(type="text", name="phone" required placeholder="+7")
                             .form__row
                                 .button
                                     button.btn(type="submit") Получить предложение
                             .form__row.form__row_mb-0.form__row_full
                                 .form__privacy
-                                    span Нажимая на кнопку, вы соглашаетесь на <a href="#" target="_blank">условия обработки данных</a>
+                                    span Нажимая на кнопку, вы соглашаетесь на <a class="privacy_policy_js" href="#">условия обработки данных</a>
                 .feedback__bg.bg
 
     // end feedback
@@ -280,13 +280,13 @@ block content
         .container_center
             .production__content
                 .production__left 
-                    h2.section__title.section__title_sm
+                    h2.section__title.section__title_sm(data-aos="fade-up")
                         span Производим индивидуальную детскую мебель на собственной фабрике на Урале
                     .production__square
                         span 4 000 м<sup>2</sup>
                         small площадь производства
                     .production__film.desktop
-                        .production__img.img
+                        .production__img.img(data-aos="fade-right")
                             img(src="img/chair.png")
                         .production__label
                             .production__icon
@@ -308,7 +308,7 @@ block content
             .production__video
                 .video
                     .video__bg.video__bg_full.bg(style="background-image: url('img/bg.jpg')")
-                        .video__play.js-youtubeModal#gvrSH5z5EGQ
+                        .video__play.js-youtubeModal#OgUKmjwCuuI
                             i.icon_play
             .production__info.desktop
                 span Служба технического контроля на производстве состоит из шести человек,<br> и каждая единица мебели проходит через два поста контроля качества.
@@ -326,7 +326,7 @@ block content
     // begin products
     section#products.products.section
         .container_center
-            h2.section__title.section__title_sm
+            h2.section__title.section__title_sm(data-aos="fade-up")
                 span Более 100 категорий и наименований продукции в ассортименте и под заказ с полной гарантией производителя
             .products__grid
                 each item in [ {number: '1', title: 'Кровати'}, {number: '2', title: 'Диваны'}, {number: '3', title: 'Шкафы'}, {number: '4', title: 'Столы и стулья'}, {number: '5', title: 'Спортивные уголки'}, {number: '6', title: 'Зоны хранения'} ]
@@ -348,18 +348,18 @@ block content
                     .feedback__form
                         form.form.form_grid(action="send.php")
                             //- из какой формы на сайте
-                            input(type="hidden" name="subject" value="форма: ПНужно индивидуальное производство мебели")
+                            input(type="hidden" name="subject" value="форма: Нужно индивидуальное производство мебели по проекту или хотите посмотреть полный каталог?")
                             //- проверка спама
                             input(type="hidden" name="notspam" value="")
 
                             .form__row
-                                input.tel(type="text", required placeholder="+7")
+                                input.tel(type="text", name="phone" required placeholder="+7")
                             .form__row
                                 .button
                                     button.btn(type="submit") Получить предложение
                             .form__row.form__row_mb-0.form__row_full
                                 .form__privacy
-                                    span Нажимая на кнопку, вы соглашаетесь на <a href="#" target="_blank">условия обработки данных</a>
+                                    span Нажимая на кнопку, вы соглашаетесь на <a class="privacy_policy_js" href="#">условия обработки данных</a>
                 .feedback__bg.bg
 
     // end feedback
@@ -369,7 +369,7 @@ block content
         .container_center
             .founder__wrap
                 .founder__content
-                    h2.section__title
+                    h2.section__title(data-aos="fade-up")
                         span Мы создаем продукт, которым пользуются наши дети
                     .section__subtitle
                         span Я сам не так давно стал отцом и понимаю, насколько важно создать комфортную, функциональную, а главное — безопасную среду для обучения, отдыха и досуга ребенка в доме.
@@ -392,7 +392,7 @@ block content
         .container_center
             .contacts__row
                 .contacts__col
-                    h2.section__title
+                    h2.section__title(data-aos="fade-up")
                         span Приезжайте в наш шоурум в Москве
                     .section__subtitle
                         span Мы будем рады видеть вас в нашем новом пространстве, где вы сможете ознакомиться с образцами мебели нашего производства, подобрать отделочные материалы, оценить качество австрийской фурнитуры и используемых пород дерева.
@@ -408,108 +408,21 @@ block content
                 .contacts__col
                     .video
                         .video__bg.video__bg_large.bg(style="background-image: url('img/bg_last.jpg')")
-                            .video__play.js-youtubeModal#gvrSH5z5EGQ
+                            .video__play.js-youtubeModal#96-8ZVH-pIs
                                 i.icon_play
             .contacts__row
                 .contacts__col
                     .contacts__text
                         span Для того чтобы менеджер смог уделить вам достаточно времени и внимания, будем признательны, если вы запишитесь на визит заранее.
                     .contacts__link.snakeline
-                        a(href="#") Записаться на визит в шоурум
+                        a.pop_up_3_js(href="#") Записаться на визит в шоурум
                 .contacts__col
                     .contacts__adress
                         span Ждем вас с 11:00 до 20:00 по адресу:
                         span <b> Москва, Проспект Мира 102, стр. 38м.<br> Алексеевская, ЖК «Парк Мира»</b>
                         span без выходных
                     .contacts__action
-                        a(href="tel:+74994040200") +7 499 40 40 200
-                        a.success(href="mailto:sales@mamka.moscow") sales@mamka.moscow
+                        a.btn_border(href="tel:+74994040200") +7 499 40 40 200
+                        a.btn_border.btn_border_success(href="mailto:sales@mamka.moscow") sales@mamka.moscow
 
     // end contacts
-
-
-
-    //- // begin form
-    //- section#form.form.section
-    //-     .container_center
-    //-         .form__content
-    //-             h1.form__title Подать заявку на лизинг
-    //-             i.icon_close    
-    //-             form.form.form_grid(action="send.php")
-    //-                 //- из какой формы на сайте
-    //-                 input(type="hidden" name="subject" value="форма в футоре")
-    //-                 //- проверка спама
-    //-                 input(type="hidden" name="notspam" value="")
-    //-                 .form__row
-    //-                     input(type="text", required placeholder="Предмет лизинга*")
-    //-                 .form__row
-    //-                     input(type="number", placeholder="ИНН")
-    //-                 .form__row
-    //-                     input(type="number", placeholder="Стоимость")
-    //-                 .form__row
-    //-                     input(type="text", placeholder="Контактное лицо")
-    //-                 .form__row
-    //-                     input(type="number", placeholder="Колличество")
-    //-                 .form__row
-    //-                     input(type="text", required placeholder="Телефон*")
-    //-                 .form__row
-    //-                     input(type="number", placeholder="Аванс")
-    //-                 .form__label
-    //-                 .form__row
-    //-                     select.select(data-placeholder="Выбор")
-    //-                         option(value="")
-    //-                         option(value="Значение 1") Значение 1
-    //-                         option(value="Значение 2") Значение 2
-    //-                         option(value="Значение 3") Значение 3
-    //-                         option(value="Значение 4") Значение 4
-    //-                 .form__row
-    //-                     input(type="email", placeholder="E-mail")
-    //-                 .form__row
-    //-                     input(type="text", placeholder="Местонахождение")
-    //-                 .form__row.form__row_full
-    //-                     textarea(type="text", placeholder="Дополнительная информация")
-    //-                 .form__row.form__row_full
-    //-                     .form__grup
-    //-                         label.form__check
-    //-                             input(type="radio" name="test" checked="checked" value="test")
-    //-                             span radio 1
-    //-                         label.form__check
-    //-                             input(type="radio" name="test" value="test_2")
-    //-                             span radio 2
-    //- 
-    //-                 .form__row
-    //-                     span.form__text Поля, помеченные *, обязательны к заполнения
-    //-                 .form__row
-    //-                     .button
-    //-                         button.btn#btn_didisabled_js(type="submit") Отправить
-    //-                 .form__row.form__row_full
-    //-                     .form__privacy
-    //-                         label.form__check
-    //-                             input#check_checked(type="checkbox" checked="checked")
-    //-                             span Прочитал(-а) Пользовательское соглашение и соглашаюсь с <a href="#" target="_blank">политикой обработки персональных данных</a>
-    //- // end form
-    //- // Button trigger modal info
-    //- //- button(class="btn btn-primary btn-lg" data-toggle="modal" data-target="#info") Click to open modal
-    //- // Begin Modal info
-    //- .modal.fade.info#info
-    //-     .modal-dialog
-    //-         .modal-content
-    //-             a(href="#" class="modal-close" data-dismiss="modal")
-    //-             .form__message
-    //- // End modal info
-
-
-
-
-
-    //- // begin programsInfo
-    //- section.section
-    //-     .container_center
-    //-         .programsInfo
-    //-             each item in [{num: '12', text: 'Программ'},{num: '25', text: 'Компетенций'},{num: '29', text: 'Преподавателей <br>и экспертов'}]
-    //-                 .programsInfo__item
-    //-                     .programsInfo__number=item.num
-    //-                     .programsInfo__text!=item.text
-    //- 
-    //- 
-    //- // end programsInfo

@@ -28,6 +28,43 @@
 
 	}
 
+	&__link {
+		text-align: center;
+		margin-top: 1em;
+		@media (min-width: 768px) {
+			margin-top: 0;
+			text-align: inherit;
+		}
+
+		a {
+			text-decoration: none;
+			font-size: 0.6875em;
+			color: $color_white;
+			@media (min-width: 768px) {
+				font-size: 0.8125em;
+
+			}
+
+			&:after {
+				border-color: rgba($color_white, 0.2);
+
+			}
+
+		}
+
+		i {
+			display: inline-block;
+			color: rgba($color_white, 0.2);
+			transform: rotate(-180deg);
+			margin-right: 0.9em;
+			font-size: 0.65em;
+			@media (min-width: 768px) {
+				font-size: 0.85em;
+
+			}
+		}
+	}
+
 }
 
 .logo {

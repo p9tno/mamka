@@ -14,3 +14,145 @@
             a(href="#" class="modal-close" data-dismiss="modal")
             .form__message
 // End modal info
+
+
+// Begin Modal privacy_policy
+.modal.fade.privacy_policy#privacy_policy
+    .modal-dialog
+        .modal-content
+            a(href="#" class="modal-close" data-dismiss="modal")
+            .modal-body
+                .privacy_policy__content
+                    h2 
+                        span Политика конфиденциальности
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+// End modal privacy_policy
+
+// Begin Modal pop_up
+.modal.fade.pop_up#pop_up
+    .modal-dialog
+        .modal-content
+            a.desktop(href="#" class="modal-close" data-dismiss="modal")
+            .modal-body
+                .pop_up__content
+                    .pop_up__img.bg
+                    .pop_up__form
+                        a.mobile(href="#" class="modal-close" data-dismiss="modal")
+                        .pop_up__title
+                            span Оставьте<br> ваши контакты
+                        .pop_up__description
+                            span Наш менеджер свяжется с вами в ближайшее время, чтобы уточнить все детали вашего проекта и подготовить коммерческое предложение
+                        form.form(action="send.php")
+                            //- из какой формы на сайте
+                            input(type="hidden" name="subject" value="форма: Закажите наш обратный звонок")
+                            //- проверка спама
+                            input(type="hidden" name="notspam" value="")
+
+                            .form__row
+                                input.tel(type="text", name="phone" required placeholder="+7")
+                            .form__row
+                                .button
+                                    button.btn(type="submit") Получить предложение
+                            .form__row.form__row_mb-0
+                                .form__privacy
+                                    span Нажимая на кнопку, вы соглашаетесь на <a href="#" class="privacy_policy_js">условия обработки данных</a>
+
+                    .pop_up__info
+                        .pop_up__persone
+                            span Лазарева Виктория
+                        .pop_up__logo
+                            .pop_up__logo-img.img
+                                img(src="/img/logo_pop_up.svg")
+                            .pop_up__label
+                                span Менеджер по работе<br> с партнерами
+
+
+// End modal pop_up
+
+
+// Begin Modal pop_up_2
+.modal.fade.pop_up.pop_up_2#pop_up_2
+    .modal-dialog
+        .modal-content
+            a.desktop(href="#" class="modal-close" data-dismiss="modal")
+            .modal-body
+                .pop_up__content
+                    .pop_up__img.bg
+                    .pop_up__form
+                        a.mobile(href="#" class="modal-close" data-dismiss="modal")
+                        .pop_up__title
+                            span Оставьте<br> ваши контакты
+                        .pop_up__description
+                            span Наш менеджер свяжется с вами в ближайшее время, чтобы уточнить все детали вашего проекта и подготовить коммерческое предложение
+                        form.form(action="send.php")
+                            //- из какой формы на сайте
+                            input(type="hidden" name="subject" value="форма: Рассказать о своих пожеланиях")
+                            //- проверка спама
+                            input(type="hidden" name="notspam" value="")
+
+                            .form__row
+                                input.tel(type="text", name="phone" required placeholder="+7")
+                            .form__row
+                                .button
+                                    button.btn(type="submit") Получить предложение
+                            .form__row.form__row_mb-0
+                                .form__privacy
+                                    span Нажимая на кнопку, вы соглашаетесь на <a href="#" class="privacy_policy_js">условия обработки данных</a>
+
+                    .pop_up__info
+                        .pop_up__persone
+                            span Татьяна Киселёва
+                        .pop_up__logo
+                            .pop_up__logo-img.img
+                                img(src="img/logo_pop_up.svg")
+                            .pop_up__label
+                                span Менеджер по работе<br> с клиентами
+
+// End modal pop_up_2
+
+
+// Begin Modal pop_up_3
+.modal.fade.pop_up.pop_up_3#pop_up_3
+    .modal-dialog
+        .modal-content
+            a.desktop(href="#" class="modal-close" data-dismiss="modal")
+            .modal-body
+                .pop_up__content
+                    .pop_up__img.bg
+                    .pop_up__form
+                        a.mobile(href="#" class="modal-close" data-dismiss="modal")
+                        .pop_up__title
+                            span Оставьте<br> ваши контакты
+                        .pop_up__description
+                            span Наш менеджер свяжется с вами в ближайшее время, чтобы уточнить все детали вашего проекта и подготовить коммерческое предложение
+                        form.form(action="send.php")
+                            //- из какой формы на сайте
+                            input(type="hidden" name="subject" value="форма: Записаться на визит в шоурум")
+                            //- проверка спама
+                            input(type="hidden" name="notspam" value="")
+
+                            .form__row
+                                input.tel(type="text", name="phone" required placeholder="+7")
+                            .form__row
+                                .button
+                                    button.btn(type="submit") Получить предложение
+                            .form__row.form__row_mb-0
+                                .form__privacy
+                                    span Нажимая на кнопку, вы соглашаетесь на <a href="#" class="privacy_policy_js">условия обработки данных</a>
+
+                    .pop_up__info
+                        .pop_up__persone
+                            span Биккалиева Дарига
+                        .pop_up__logo
+                            .pop_up__logo-img.img
+                                img(src="img/logo_pop_up.svg")
+                            .pop_up__label
+                                span Менеджер по работе<br> с клиентами
+
+
+// End modal pop_up_3

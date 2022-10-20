@@ -23,14 +23,24 @@ body {
 	flex-direction: column;
 	height: auto;
 	min-height: 100%;
-
 	font-size: $main_font_size;
+
+	&_thank {
+		@media (min-width: 768px) {
+			background-image: url("../../img/thank.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+		}
+	}
 }
 
 /* Middle
  ----------------------------------------------------------------------------- */
 .main_content {
 	flex-grow: 1;
+	overflow: hidden;
 }
 
 .container_center {

@@ -1,13 +1,48 @@
 $(document).ready(function() {
 
-    // function showSentence() {
-    //     $('.sentence_modal_js').on('click', function (e) {
-    //         e.preventDefault();
-    //         $('#sentence').modal('show');
-    //     });
-    // }
-    // showSentence();
+    function preloader() {
+        $(()=>{
 
+            setTimeout( () => {
+                let p = $('#preloader');
+                p.addClass('hide');
+
+                setTimeout( () => {
+                    p.remove()
+                },700);
+
+            },700);
+        });
+    }
+    preloader();
+
+    function showModal() {
+        $('.privacy_policy_js').on('click', function (e) {
+            e.preventDefault();
+            $('#privacy_policy').modal('show');
+        });
+        $('.pop_up_js').on('click', function (e) {
+            e.preventDefault();
+            $('#pop_up').modal('show');
+        });
+        $('.pop_up_2_js').on('click', function (e) {
+            e.preventDefault();
+            $('#pop_up_2').modal('show');
+        });
+        $('.pop_up_3_js').on('click', function (e) {
+            e.preventDefault();
+            $('#pop_up_3').modal('show');
+        });
+    }
+    showModal();
+
+
+    $('.modal').on('show.bs.modal', () => {
+        let openedModal = $('.modal');
+        if (openedModal.length > 0) {
+            openedModal.modal('hide');
+        }
+    });
 
 
 
@@ -79,47 +114,47 @@ $(document).ready(function() {
 
 
    // start animate numbers
-function onVisible( selector, callback, repeat = false ) {
+    function onVisible( selector, callback, repeat = false ) {
 
-    let options = {
-        threshold: [ 0.5 ]
-    };
-    let observer = new IntersectionObserver( onEntry, options );
-    let elements = document.querySelectorAll( selector );
+        let options = {
+            threshold: [ 0.5 ]
+        };
+        let observer = new IntersectionObserver( onEntry, options );
+        let elements = document.querySelectorAll( selector );
 
-    for ( let elm of elements ) {
-        observer.observe( elm );
-    }
-
-    function onEntry( entry ) {
-        entry.forEach( change => {
-            let elem = change.target;
-            // console.log(change);
-            // console.log(elem.innerHTML);
-            if ( change.isIntersecting ) {
-                if ( !elem.classList.contains( 'show' ) || repeat ) {
-                    elem.classList.add( 'show' );
-                    callback( elem );
-                }
-            }
-        } );
-    }
-}
-
-onVisible( '.animate_numbers_js', function ( e ) {
-    animateNumber( e, e.innerHTML );
-} );
-
-function animateNumber( elem, final, duration = 1500 ) {
-    let start = 0;
-    // console.log('init');
-    setInterval( function () {
-        if ( final >= start ) {
-            elem.innerHTML = start++;
+        for ( let elm of elements ) {
+            observer.observe( elm );
         }
-    }, duration / final );
-}
-// end animate numbers
+
+        function onEntry( entry ) {
+            entry.forEach( change => {
+                let elem = change.target;
+                // console.log(change);
+                // console.log(elem.innerHTML);
+                if ( change.isIntersecting ) {
+                    if ( !elem.classList.contains( 'show' ) || repeat ) {
+                        elem.classList.add( 'show' );
+                        callback( elem );
+                    }
+                }
+            } );
+        }
+    }
+
+    onVisible( '.animate_numbers_js', function ( e ) {
+        animateNumber( e, e.innerHTML );
+    } );
+
+    function animateNumber( elem, final, duration = 1500 ) {
+        let start = 0;
+        // console.log('init');
+        setInterval( function () {
+            if ( final >= start ) {
+                elem.innerHTML = start++;
+            }
+        }, duration / final );
+    }
+    // end animate numbers
 
 
 

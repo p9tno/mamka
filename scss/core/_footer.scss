@@ -5,6 +5,16 @@
 	background-color: #BBAB9E;
 	padding: 2.5em 0 2.25em;
 
+	&_thank {
+		background-color: #A0A9A5;
+
+		@media (min-width: 768px) {
+			margin-top: -29em;
+			background-color: transparent;
+
+		}
+	}
+
 	@media (min-width: 768px) {
 		padding: 4.125em 0 3.75em;
 

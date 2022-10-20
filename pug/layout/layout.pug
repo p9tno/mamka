@@ -1,3 +1,7 @@
+block variable
+    -var path = '';
+    -var page = true;
+
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -8,19 +12,65 @@ html(lang="en")
         meta(name="keywords" content="keywords")
         //- <meta name="format-detection" content="telephone=no">
 
-        link(rel="icon" href="favicon.ico" type="/image/x-icon")
+        link(rel="icon" href=path + "favicon.ico" type="/image/x-icon")
 
-        link(rel="stylesheet", type="text/css", href="css/fancybox.min.css")
-        link(rel="stylesheet", type="text/css", href="css/style.css")
+        //- <link rel="preconnect" href="https://fonts.googleapis.com">
+        //- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        //- <link href="https://fonts.googleapis.com/css2?family=Literata:wght@500&display=swap" rel="stylesheet">
+
+        link(rel="stylesheet", type="text/css", href=path + "css/aos.css")
+        link(rel="stylesheet", type="text/css", href=path + "css/fancybox.min.css")
+        link(rel="stylesheet", type="text/css", href=path + "css/style.css")
         title Document
     body
-        .wrapper
-            include header.pug
 
-            main.main_content
-                block content
+        if page
+            .wrapper
+                #preloader.preloader
+                    .preloader__content
+                        .preloader__item.preloader__first
+                        .preloader__item.preloader__second
+                        .preloader__item.preloader__third
 
-            include footer.pug
-            include modal.pug
+                if page
+                    include header.pug
+                else
+                    include header_thanks.pug
 
-            include scripts.pug
+                main.main_content
+                    block content
+
+                if page
+                    include footer.pug
+                else
+                    include footer_thanks.pug
+
+                include modal.pug
+
+                include scripts.pug
+
+
+        else
+            .wrapper.wrapper_thank
+                #preloader.preloader
+                    .preloader__content
+                        .preloader__item.preloader__first
+                        .preloader__item.preloader__second
+                        .preloader__item.preloader__third
+
+                if page
+                    include header.pug
+                else
+                    include header_thanks.pug
+
+                main.main_content
+                    block content
+
+                if page
+                    include footer.pug
+                else
+                    include footer_thanks.pug
+
+                include modal.pug
+
+                include scripts.pug

@@ -3,8 +3,7 @@
     // $userEmail = $_POST['email'];
     $subject = $_POST['subject'];
     $notspam = $_POST['notspam'];
-    $userName  = $_POST['name'];
-    $userMessage = $_POST['message'];
+    $userPhone  = $_POST['phone'];
 
     if ($notspam == 'Not spam') {
         // $notspam = 'Не бот';
@@ -20,12 +19,11 @@
         </head>
         <body>
             <h2 style="">Заявка с формы: ' . $subject . '</h2>
-            <p>Контактное лицо: ' . $userName . '</p>
-            <p>Cообщение: ' . $userMessage . '</p>
+            <p>Номер телефона: ' . $userPhone . '</p>
         </body>
     </html>';
     $headers = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
-    $headers .= "From: тестовый сайт buhone <order@buhone.ru>\r\n"; //Наименование и почта отправителя
+    $headers .= "From: Заявка с сайта Mamka <order@buhone.ru>\r\n"; //Наименование и почта отправителя
 
     // mail($to, $subject, $message, $headers);
 

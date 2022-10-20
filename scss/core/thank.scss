@@ -1,0 +1,77 @@
+.thank {
+    .section__subtitle,
+    .section__title {
+
+        @media (min-width: 768px) {
+            margin: 0;
+            text-align: left;
+            color: $color_white;
+
+        }
+
+    }
+
+    .section__title {
+        letter-spacing: -0.02em;
+        @media (min-width: 768px) {
+            margin-bottom: 1.875em;
+            width: 41em;
+
+        }
+    }
+
+    .section__subtitle {
+        margin-top: 1.25em;
+        @media (min-width: 768px) {
+            margin-top: 0;
+            margin-bottom: 1.875em;
+            width: 32em;
+        }
+    }
+
+    background-image: url("../../img/thank_m.jpg");
+    @media (min-width: 768px) {
+        background-image: none;
+    }
+
+    padding-top: 25.3125em;
+    padding-bottom: 2.8125em;
+
+    @media (min-width: 768px) {
+        padding-top: 10.9375em;
+        padding-bottom: 51.875em;
+    }
+
+    &__wrap {
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: flex-end;
+
+        }
+    }
+
+    &__content {
+        @media (max-width: 767px) {
+            background-color: #F4F2F0;
+            padding: 2.1875em 2.1875em 3.125em;
+
+        }
+
+    }
+
+    &__link {
+        margin-top: 0.5em;
+        @media (min-width: 768px) {
+            margin-top: 0;
+        }
+
+        a {
+            @media (min-width: 768px) {
+                color: $color_white;
+                min-width: 11em;
+
+            }
+        }
+    }
+
+}

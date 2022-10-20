@@ -89,7 +89,6 @@
         }
 
         a {
-            // position: relative;
             text-decoration: none;
             color: $main_color;
             font-weight: 500;
@@ -157,25 +156,6 @@
         }
 
         a {
-
-            color: #121213;
-            font-family: $main_font_family;
-            font-weight: 600;
-            border: 1px solid $color_danger;
-            outline: none;
-            text-decoration: none;
-            display: inline-block;
-            background-color: transparent;
-            text-align: center;
-            max-width: 100%;
-            min-width: 17.5em;
-            cursor: pointer;
-            border-radius: 7em;
-            transition: 0.3s;
-
-            font-size: 0.875em;
-            padding: 1.293em 1em;
-
             &:first-child {
                 margin-bottom: 0.9375em;
                 @media (min-width: 768px) {
@@ -184,37 +164,6 @@
                 }
             }
 
-            @media (min-width: 768px) {
-                border-radius: 5em;
-                font-size: 1.25em;
-                padding: 0.85em 1.25em;
-                min-width: 17.5em;
-
-            }
-
-            &:hover {
-                background-color: $color_danger;
-                color: $color_white;
-            }
-
-            &:active {
-                background-color: darken($color_danger, 5%);
-
-            }
-
-            &.success {
-                border: 1px solid $color_success;
-
-                &:hover {
-                    background-color: $color_success;
-                    // color: $color_white;
-                }
-
-                &:active {
-                    background-color: darken($color_success, 5%);
-
-                }
-            }
         }
     }
 
@@ -232,8 +181,6 @@
         align-items: center;
 
         &:first-child {
-            // margin-right: 2.625em;
-            /* 42/16 */
             @media (min-width: 768px) {
                 margin-right: 5.125em;
 
@@ -245,11 +192,8 @@
         font-family: $second_font_family;
         font-weight: 200;
         font-size: 3.375em;
-        /* 54/16 */
         @media (min-width: 768px) {
-            // font-size: 3.75em;
-
-        }
+            }
     }
 
     sup {
@@ -259,7 +203,6 @@
 
     small {
         font-size: 0.6875em;
-        /* 11/16 */
         font-weight: 300;
         margin-top: 0.2em;
         @media (min-width: 768px) {
