@@ -2,7 +2,7 @@
     padding-top: 10.625em;
     padding-bottom: 18.75em;
     background-image: url("../img/firstscreen_m.jpg");
-    @media (min-width: 768px) {
+    @media (min-width: 501px) {
         padding-top: 10.3125em;
         padding-bottom: 19.375em;
         background-image: url("../img/firstscreen.jpg");
@@ -16,7 +16,7 @@
     &__action {
         text-align: center;
         margin-top: 1.375em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-top: 2.1875em;
         }
     }
@@ -27,7 +27,7 @@
         transform: translateX(-50%);
         bottom: -22.5em;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             left: auto;
             transform: none;
             bottom: auto;
@@ -48,7 +48,7 @@
     height: 8.513em;
     padding: 1.5em 1em 1em;
 
-    @media (min-width: 768px) {
+    @media (min-width: 501px) {
         width: 9.375em;
         height: 9.597em;
         padding: 1.5625em 0.3125em 1.3125em 1.5625em;
@@ -64,7 +64,7 @@
         line-height: 0.938;
         text-align: center;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             line-height: 1.1;
             text-align: left;
 
@@ -73,7 +73,7 @@
         span {
             font-weight: 300;
             font-size: 0.6875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 0.8125em;
             }
         }
@@ -88,7 +88,7 @@
         width: 1.625em;
         height: 1.625em;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             top: auto;
             bottom: -2.5em;
             left: 0;

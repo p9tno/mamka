@@ -5,7 +5,7 @@
         grid-auto-rows: 9.6875em;
         grid-gap: 0.625em;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             grid-template-columns: repeat(3, 1fr);
             grid-auto-rows: 26.875em;
             grid-gap: 1.5625em;
@@ -22,7 +22,7 @@
             text-decoration: none;
             color: $color_white;
 
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 &:hover {
                     .projects__title {
                         transform: translateY(-2em);
@@ -52,7 +52,7 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 0.625em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             padding: 1.25em 1.25em 1.625em;
 
         }
@@ -70,7 +70,7 @@
         border-color: $color_white;
         background-color: transparent;
         font-size: 0.575em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             font-size: 1em;
             transition: 0.3s;
         }
@@ -78,7 +78,7 @@
         i {
             font-size: 0.8125em;
             color: $color_white;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 transition: color 0.3s;
             }
         }
@@ -88,7 +88,7 @@
         margin: 0 auto;
         text-align: center;
         line-height: 0.95;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             line-height: 1.3;
             transform: translateY(0);
             transition: transform 0.3s;
@@ -98,7 +98,7 @@
             font-family: $second_font_family;
             font-size: 0.875em;
             font-weight: 300;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 2.125em;
             }
         }

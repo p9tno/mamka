@@ -1,6 +1,6 @@
 .production {
     .section__title {
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin: 0;
             text-align: left;
 
@@ -8,7 +8,7 @@
     }
 
     .section__subtitle {
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             text-align: left;
             margin: 0;
             width: 27em;
@@ -16,14 +16,14 @@
         }
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 500px) {
         padding-top: 1.5em;
         padding-bottom: 1.5em;
     }
 
     &__content {
         padding-bottom: 1.375em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             padding-bottom: 2.125em;
             display: flex;
             justify-content: space-between;
@@ -33,14 +33,14 @@
 
     &__left {
         padding-bottom: 0.625em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             padding-bottom: 0;
             margin-right: 3.125em;
         }
     }
 
     &__right {
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-top: 10.125em;
         }
     }
@@ -51,7 +51,7 @@
         text-align: center;
         margin-top: 0.625em;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-top: 0;
             width: fit-content;
             letter-spacing: -0.03em;
@@ -63,7 +63,7 @@
             font-weight: 300;
             font-size: 3.625em;
 
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 6.25em;
 
             }
@@ -78,7 +78,7 @@
             font-size: 0.6875em;
             letter-spacing: normal;
 
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 0.8125em;
 
             }
@@ -86,13 +86,13 @@
     }
 
     &__film {
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             position: relative;
         }
     }
 
     &__img {
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             position: absolute;
             left: -0.5em;
             bottom: -11.5em;
@@ -105,7 +105,7 @@
     &__label {
         text-align: center;
         margin-top: 2.5em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             text-align: left;
             width: 25.5em;
             margin-top: 5.4375em;
@@ -114,7 +114,7 @@
         }
 
         .production__icon {
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 margin-bottom: 0.6875em;
                 width: 2.5em;
                 height: 2.5em;
@@ -124,7 +124,7 @@
 
         span {
             font-size: 0.875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 line-height: 1.417;
                 font-size: 1.125em;
 
@@ -144,7 +144,7 @@
             margin-right: 0.75em;
             width: 1.4375em;
             height: 1.4375em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 margin-right: 0.625em;
                 width: 2.5em;
                 height: 2.5em;
@@ -155,7 +155,7 @@
                 color: $color_success;
                 font-family: $italic_font_family;
                 font-size: 0.75em;
-                @media (min-width: 768px) {
+                @media (min-width: 501px) {
                     font-size: 1.375em;
 
                 }
@@ -164,7 +164,7 @@
         }
 
         margin-top: 1.25em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-top: 0;
         }
     }
@@ -174,7 +174,7 @@
         align-items: flex-start;
         margin-bottom: 0.8125em;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             align-items: center;
             margin-bottom: 1.25em;
         }
@@ -187,7 +187,7 @@
             line-height: 1.35;
             font-size: 0.875em;
 
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 line-height: 1.4;
                 font-size: 1.125em;
 
@@ -200,14 +200,14 @@
         margin-top: 1.6875em;
         line-height: 0.938;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             line-height: $main_line_height;
             margin-top: 1.5em;
         }
 
         span {
             font-size: 0.6875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 0.8125em;
             }
         }

@@ -1,15 +1,37 @@
 .team {
     position: relative;
     color: $color_white;
-    background-image: url("../img/team_m.jpg");
+    background-image: url("../img/team.jpg");
+    background-position: top;
+    background-size: contain;
+    z-index: -2;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 20.5em;
+        background: linear-gradient(180deg, rgba(134, 141, 141, 0) 0%, #868D8D 13.18%);
+        z-index: -1;
+    }
 
     padding-top: 12.375em;
     padding-bottom: 5.875em;
 
-    @media (min-width: 768px) {
-        background-image: url("../img/team.jpg");
+    @media (min-width: 501px) {
         padding-top: 37.9375em;
         padding-bottom: 6.875em;
+        background-position: center;
+        background-size: cover;
+        z-index: auto;
+
+        &:after {
+            content: none;
+
+        }
 
     }
 
@@ -23,11 +45,11 @@
         margin-top: 0;
         margin-bottom: 2.0625em;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-bottom: 0;
             margin-top: -0.6em;
             font-family: $second_font_family;
-            width: 48em;
+            width: 42em;
             font-weight: 300;
             line-height: 1.1366;
 
@@ -42,7 +64,7 @@
         height: 2.5em;
         margin-left: 0.75em;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             width: 17em;
             height: 4.5625em;
             margin-left: 0.75em;
@@ -57,7 +79,7 @@
         right: 50%;
         transform: translateX(50%);
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             transform: none;
             bottom: -0.5em;
             right: 24.5em;
@@ -69,7 +91,7 @@
     .extra {
         &__wrap {
             padding-top: 0.5em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 padding-top: 1.125em;
 
             }

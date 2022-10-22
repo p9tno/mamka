@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Viaoda Libre';
+    src: url('ViaodaLibre-Regular.eot');
+    src: url('ViaodaLibre-Regular.eot?#iefix') format('embedded-opentype'),
+        url('ViaodaLibre-Regular.woff2') format('woff2'),
+        url('ViaodaLibre-Regular.woff') format('woff'),
+        url('ViaodaLibre-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

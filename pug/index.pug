@@ -36,8 +36,10 @@ block content
                             .quote__wrap
                                 .quote__icon
                                     i.icon_quotes
-                                .quote__content
+                                .quote__content.desktop
                                     span Любое наше пожелание было услышано и реализовано. Ариане эта комната запомниться на всю жизнь! Мы правильно сделали, что нашли вас.
+                                .quote__content.mobile
+                                    span Любое наше пожелание было услышано | и реализовано. Ариане эта комната | запомнится на всю жизнь! | Мы правильно сделали, что нашли вас.
                     .clients__persone
                         .persone
                             .persone__bg.bg
@@ -115,7 +117,7 @@ block content
     section#projects.projects.section
         .container_center
             .projects__grid
-                each item in [ {number: '1', title: 'Детскаяна<br> 6 детей'}, {number: '2', title: 'Дом Бохо'}, {number: '3', title: '2-уровневая<br> комната для девочки'}, {number: '4', title: 'Комната для разнополых деток'}, {number: '5', title: 'Домик для юного принца'}, {number: '6', title: 'Комната<br> для девочки'} ]
+                each item in [ {number: '1', title: 'Детская на<br> 6 детей'}, {number: '2', title: 'Дом Бохо'}, {number: '3', title: '2-уровневая<br> комната для девочки'}, {number: '4', title: 'Комната для<br> разнополых деток'}, {number: '5', title: 'Домик для юного принца'}, {number: '6', title: 'Комната<br> для девочки'} ]
 
                     .projects__item
                         a.img(href="img/project_"+item.number+".jpg" data-fancybox data-type="image")
@@ -135,7 +137,8 @@ block content
 
                 .development__left
                     h2.section__title.section__title_sm(data-aos="fade-up")
-                        span Получите коммерческое предложение на разработку дизайн-проекта для вашей детской
+                        span.desktop Получите коммерческое предложение на разработку дизайн-проекта для вашей детской
+                        span.mobile Получите | коммерческое | предложение | на разработку | дизайн-проекта | для вашей детской
                         small в 3-х ценовых вариантах
                     .development__offer.bg(data-aos="fade-up")
 
@@ -280,8 +283,10 @@ block content
         .container_center
             .production__content
                 .production__left 
-                    h2.section__title.section__title_sm(data-aos="fade-up")
+                    h2.section__title.section__title_sm.desktop(data-aos="fade-up")
                         span Производим индивидуальную детскую мебель на собственной фабрике на Урале
+                    h2.section__title.section__title_sm.mobile
+                        span Производим | индивидуальную | детскую мебель на | собственной фабрике | на Урале
                     .production__square
                         span 4 000 м<sup>2</sup>
                         small площадь производства
@@ -326,10 +331,12 @@ block content
     // begin products
     section#products.products.section
         .container_center
-            h2.section__title.section__title_sm(data-aos="fade-up")
+            h2.section__title.section__title_sm.desktop(data-aos="fade-up")
                 span Более 100 категорий и наименований продукции в ассортименте и под заказ с полной гарантией производителя
+            h2.section__title.section__title_sm.mobile
+                span Более 100 категорий / и наименований продукции / в ассортименте и под заказ / с полной гарантией / производителя
             .products__grid
-                each item in [ {number: '1', title: 'Кровати'}, {number: '2', title: 'Диваны'}, {number: '3', title: 'Шкафы'}, {number: '4', title: 'Столы и стулья'}, {number: '5', title: 'Спортивные уголки'}, {number: '6', title: 'Зоны хранения'} ]
+                each item in [ {number: '1', title: 'Кровати'}, {number: '2', title: 'Диваны '}, {number: '3', title: 'Шкафы'}, {number: '4', title: 'Столы и стулья'}, {number: '5', title: 'Спортивные уголки'}, {number: '6', title: 'Зоны хранения'} ]
                     .products__item.bg(style="background-image: url('img/cat_"+item.number+".webp')")
                         .products__title
                             span!=item.title
@@ -370,7 +377,7 @@ block content
             .founder__wrap
                 .founder__content
                     h2.section__title(data-aos="fade-up")
-                        span Мы создаем продукт, которым пользуются наши дети
+                        span Мы создаем продукт,<br> которым пользуются<br> наши дети
                     .section__subtitle
                         span Я сам не так давно стал отцом и понимаю, насколько важно создать комфортную, функциональную, а главное — безопасную среду для обучения, отдыха и досуга ребенка в доме.
                     .section__subtitle
@@ -392,8 +399,10 @@ block content
         .container_center
             .contacts__row
                 .contacts__col
-                    h2.section__title(data-aos="fade-up")
-                        span Приезжайте в наш шоурум в Москве
+                    h2.section__title.desktop(data-aos="fade-up")
+                        span Приезжайте<br> в наш шоурум<br> в Москве
+                    h2.section__title.mobile
+                        span Приезжайте<br> в наш шоурум<br> в Москве
                     .section__subtitle
                         span Мы будем рады видеть вас в нашем новом пространстве, где вы сможете ознакомиться с образцами мебели нашего производства, подобрать отделочные материалы, оценить качество австрийской фурнитуры и используемых пород дерева.
                     .contacts__numbers

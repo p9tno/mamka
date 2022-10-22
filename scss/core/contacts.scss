@@ -1,7 +1,7 @@
 .contacts {
     .section__subtitle,
     .section__title {
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             width: auto;
             text-align: left;
         }
@@ -9,25 +9,25 @@
 
     .section__subtitle {
         margin-top: 1.25em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-top: 1.875em;
             line-height: 1.4;
         }
     }
     padding-bottom: 2.8125em;
-    @media (min-width: 768px) {
+    @media (min-width: 501px) {
         padding-bottom: 9.0625em;
     }
 
     &__row {
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             display: flex;
             justify-content: space-between;
         }
 
         &:first-child {
             margin-bottom: 1.875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 margin-bottom: 4.75em;
 
             }
@@ -36,14 +36,14 @@
 
     &__col {
         &:first-child {
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 width: 25.625em;
             }
         }
 
         &:last-child {
 
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 width: 55.3125em;
 
             }
@@ -53,7 +53,7 @@
     &__numbers {
         margin-top: 0.6875em;
         margin-bottom: 1.5625em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-top: 2.1875em;
             margin-bottom: 0;
 
@@ -63,7 +63,7 @@
     &__text {
         margin-bottom: 0.875em;
         text-align: center;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-bottom: 1.6875em;
             line-height: 1.4;
             width: 21.875em;
@@ -73,7 +73,7 @@
         span {
             font-weight: 300;
             font-size: 0.875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.125em;
 
             }
@@ -83,7 +83,7 @@
     &__link {
         text-align: center;
         margin-bottom: 1.9375em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             text-align: left;
             margin-bottom: 0;
         }
@@ -93,7 +93,7 @@
             color: $main_color;
             font-weight: 500;
             font-size: 0.875em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.125em;
 
             }
@@ -112,7 +112,7 @@
         text-align: center;
         margin-bottom: 2.0625em;
         line-height: 1.3;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-bottom: 3.75em;
             text-align: left;
             display: flex;
@@ -125,18 +125,18 @@
             font-weight: 300;
             font-size: 0.875em;
             display: inline-block;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.125em;
             }
 
             &:last-child {
-                @media (max-width: 767px) {
+                @media (max-width: 500px) {
                     margin-top: 0.9375em;
                     font-size: 0.6875em;
                     display: block;
 
                 }
-                @media (min-width: 768px) {
+                @media (min-width: 501px) {
                     color: rgba($main_color, 0.3);
 
                 }
@@ -151,14 +151,14 @@
 
     &__action {
         text-align: center;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             text-align: left;
         }
 
         a {
             &:first-child {
                 margin-bottom: 0.9375em;
-                @media (min-width: 768px) {
+                @media (min-width: 501px) {
                     margin-right: 1.25em;
                     margin-bottom: 0;
                 }
@@ -171,7 +171,7 @@
 
 .numbers {
     display: flex;
-    @media (max-width: 767px) {
+    @media (max-width: 500px) {
         justify-content: space-between;
     }
 
@@ -181,7 +181,7 @@
         align-items: center;
 
         &:first-child {
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 margin-right: 5.125em;
 
             }
@@ -192,7 +192,7 @@
         font-family: $second_font_family;
         font-weight: 200;
         font-size: 3.375em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             }
     }
 
@@ -205,7 +205,7 @@
         font-size: 0.6875em;
         font-weight: 300;
         margin-top: 0.2em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             font-size: 0.8125em;
             margin-top: 0.34em;
 

@@ -1,6 +1,5 @@
 <?php
     $to = 'plahotin_s@mail.ru'; //Почта получателя, через запятую можно указать сколько угодно адресов
-    // $userEmail = $_POST['email'];
     $subject = $_POST['subject'];
     $notspam = $_POST['notspam'];
     $userPhone  = $_POST['phone'];

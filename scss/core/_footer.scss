@@ -8,21 +8,21 @@
 	&_thank {
 		background-color: #A0A9A5;
 
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			margin-top: -29em;
 			background-color: transparent;
 
 		}
 	}
 
-	@media (min-width: 768px) {
+	@media (min-width: 501px) {
 		padding: 4.125em 0 3.75em;
 
 	}
 
 	&__row {
 
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			.container_center {
 				display: flex;
 				justify-content: space-between;
@@ -36,7 +36,7 @@
 		&:first-child {
 			border-bottom: 1px solid rgba($color_white, 0.1);
 			padding-bottom: 2.625em;
-			@media (min-width: 768px) {
+			@media (min-width: 501px) {
 				padding-bottom: 4.375em;
 			}
 
@@ -55,7 +55,7 @@
 					font-weight: 600;
 					font-size: 0.875em;
 
-					@media (min-width: 768px) {
+					@media (min-width: 501px) {
 						margin: 0;
 						font-size: 1.25em;
 					}
@@ -67,7 +67,7 @@
 
 		&:last-child {
 			padding-top: 1.875em;
-			@media (min-width: 768px) {
+			@media (min-width: 501px) {
 				padding-top: 4.375em;
 
 			}
@@ -78,7 +78,7 @@
 				width: fit-content;
 				margin: 0 auto;
 				font-size: 0.6875em;
-				@media (min-width: 768px) {
+				@media (min-width: 501px) {
 					margin: 0;
 					font-size: 0.8125em;
 				}
@@ -94,7 +94,7 @@
 			.footer__content {
 				span {
 					margin-top: 1.625em;
-					@media (min-width: 768px) {
+					@media (min-width: 501px) {
 						margin-top: 0;
 					}
 				}
@@ -103,7 +103,7 @@
 	}
 
 	&__col {
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			&:last-child {
 				width: 55.25em;
 			}
@@ -112,14 +112,14 @@
 	}
 
 	&__content {
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			display: flex;
 			justify-content: space-between;
 		}
 
 		&.pb {
 			padding-bottom: 1.25em;
-			@media (min-width: 768px) {
+			@media (min-width: 501px) {
 				padding-bottom: 2.25em;
 
 			}
@@ -127,14 +127,14 @@
 
 		&.pt {
 			padding-top: 1.25em;
-			@media (min-width: 768px) {
+			@media (min-width: 501px) {
 				padding-top: 2.25em;
 
 			}
 		}
 
 		&.border {
-			@media (min-width: 768px) {
+			@media (min-width: 501px) {
 				border-bottom: 1px solid rgba($color_white, 0.1);
 			}
 		}
@@ -156,7 +156,7 @@
 	.logo {
 		width: 10.625em;
 		height: 2.875em;
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			margin: 0;
 			width: 19.4375em;
 			height: 5.3125em;
@@ -165,7 +165,7 @@
 		&__descpiption {
 			line-height: 1.125;
 			margin-bottom: 2.1875em;
-			@media (min-width: 768px) {
+			@media (min-width: 501px) {
 				margin-bottom: 0;
 				margin-left: 7em;
 			}
@@ -183,8 +183,8 @@
 	width: 13.625em;
 	margin: 0 auto 2.0625em;
 
-	@media (min-width: 768px) {
-		width: 16.25em;
+	@media (min-width: 501px) {
+		width: 17.25em;
 		margin: 0;
 
 	}
@@ -193,7 +193,7 @@
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 0.625em;
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			margin-bottom: 0.75em;
 
 		}

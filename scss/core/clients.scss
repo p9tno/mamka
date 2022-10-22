@@ -1,11 +1,11 @@
 .clients {
     padding-top: 7.1875em;
-    @media (min-width: 768px) {
+    @media (min-width: 501px) {
         padding-top: 6.875em;
 
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 501px) {
         .section__subtitle {
             width: 44em;
         }
@@ -13,7 +13,7 @@
 
     &__list {
         padding-top: 3.75em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             padding-top: 5em;
             width: 68.125em;
             margin: 0 auto;
@@ -27,7 +27,7 @@
         &:last-child {
             margin-bottom: 0;
         }
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-bottom: 10.75em;
             position: relative;
             display: flex;
@@ -38,23 +38,23 @@
         // START persone__bg
         &:nth-child(1) {
             .persone__bg {
-                background-image: url("../img/persone_1_m.webp");
+                background-image: url("../img/persone_1_m.png");
             }
         }
 
         &:nth-child(2) {
             .persone__bg {
-                background-image: url("../img/persone_2_m.webp");
+                background-image: url("../img/persone_2_m.png");
             }
         }
 
         &:nth-child(3) {
             .persone__bg {
-                background-image: url("../img/persone_3_m.webp");
+                background-image: url("../img/persone_3_m.png");
             }
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             &:nth-child(1) {
                 .persone__bg {
                     background-image: url("../img/persone_1.webp");
@@ -68,7 +68,7 @@
                 }
 
                 .persone__name small {
-                    right: -2.75em;
+                    right: -4em;
 
                 }
             }
@@ -76,7 +76,7 @@
             &:nth-child(2) {
                 .persone__bg {
                     background-image: url("../img/persone_2_m.webp");
-                    @media (min-width: 768px) {
+                    @media (min-width: 501px) {
                         background-image: url("../img/persone_2.webp");
                         width: 21.25em;
                         height: 25.4375em;
@@ -90,7 +90,7 @@
                 }
 
                 .persone__name small {
-                    right: -7.75em;
+                    right: -8.75em;
 
                 }
             }
@@ -98,7 +98,7 @@
             &:nth-child(3) {
                 .persone__bg {
                     background-image: url("../img/persone_3_m.webp");
-                    @media (min-width: 768px) {
+                    @media (min-width: 501px) {
                         background-image: url("../img/persone_3.webp");
                         width: 26.25em;
                         height: 25.4375em;
@@ -112,7 +112,7 @@
                 }
 
                 .persone__name small {
-                    right: -11em;
+                    right: -10em;
 
                 }
             }
@@ -124,7 +124,7 @@
     &__quote {
         margin-bottom: 1.375em;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-bottom: 0;
             position: absolute;
             right: -4.75em;
@@ -136,7 +136,7 @@
 
     &__persone {
         margin-bottom: 1.5em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-bottom: 0;
             margin-left: 5em;
             margin-top: 2.5em;
@@ -151,7 +151,7 @@
 .quote {
     position: relative;
 
-    @media (min-width: 768px) {
+    @media (min-width: 501px) {
         transform: skewY(-6deg);
         background-color: $color_white;
         z-index: 2;
@@ -160,7 +160,7 @@
     }
 
     &__wrap {
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             transform: skewY(6deg);
         }
     }
@@ -171,7 +171,7 @@
         left: 50%;
         transform: translateX(-50%);
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             transform: none;
             top: -3.25em;
             left: 2.75em;
@@ -181,7 +181,7 @@
         i {
             color: $color_danger;
             font-size: 0.75em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.125em;
 
             }
@@ -192,7 +192,7 @@
         line-height: 1;
         text-align: center;
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             text-align: left;
             line-height: 1.3;
         }
@@ -202,7 +202,7 @@
             font-family: $italic_font_family;
             font-style: italic;
 
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.5em;
 
             }
@@ -216,7 +216,7 @@
     justify-content: center;
     align-items: center;
 
-    @media (min-width: 768px) {
+    @media (min-width: 501px) {
         display: block;
     }
 
@@ -227,7 +227,11 @@
         border-radius: 50%;
         margin-right: 0.5625em;
 
-        @media (min-width: 768px) {
+        @media (max-width: 500px) {
+            background-color: #bbaa9e;
+        }
+
+        @media (min-width: 501px) {
             overflow: visible;
             border-radius: initial;
             margin-right: 0;
@@ -247,7 +251,7 @@
             font-weight: 300;
             font-size: 1.0625em;
 
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 display: block;
                 font-size: 2.75em;
 
@@ -265,12 +269,11 @@
             margin-top: 0.25em;
             font-weight: 300;
 
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 margin-top: 0;
                 font-size: 0.8125em;
                 position: absolute;
                 top: 0.95em;
-                // right: -2.75em;
 
             }
 

@@ -7,7 +7,7 @@
 
     .section__title {
         margin-bottom: 0.9375em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-bottom: 1.25em;
         }
 
@@ -21,14 +21,14 @@
         }
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 500px) {
         height: 44.375em;
         background-image: url("../img/lider_m.jpg");
         margin-top: 0.625em;
         margin-bottom: 17em;
 
     }
-    @media (min-width: 768px) {
+    @media (min-width: 501px) {
         margin-top: 3.75em;
         padding-top: 8.4375em;
         padding-bottom: 6.8125em;
@@ -40,12 +40,12 @@
         background-color: #F4F2F0;
         padding: 2.625em 1.875em 2.5em;
 
-        @media (max-width: 767px) {
+        @media (max-width: 500px) {
             position: relative;
             bottom: -14.5em;
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             padding: 0;
             background-color: transparent;
             display: flex;
@@ -66,7 +66,7 @@
             font-size: 1em;
             color: $color_danger;
 
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 top: -1.66em;
                 left: -2.5em;
                 font-size: 1.575em;
@@ -78,7 +78,7 @@
     &__persone {
         margin-top: 1.5em;
         margin-bottom: 0.3125em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
 
             margin-top: 5em;
         }
@@ -86,7 +86,7 @@
         span {
             font-size: 1.125em;
             font-family: $italic_font_family;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 1.5em;
 
             }
@@ -104,7 +104,7 @@
 
         width: 1.4375em;
         height: 1.4375em;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             margin-bottom: -0.5em;
             width: 2.125em;
             height: 2.125em;
@@ -116,14 +116,14 @@
         width: 10.3125em;
         margin-left: 0.375em;
         line-height: 0.749;
-        @media (min-width: 768px) {
+        @media (min-width: 501px) {
             line-height: 1.125;
 
         }
 
         span {
             font-size: 0.5625em;
-            @media (min-width: 768px) {
+            @media (min-width: 501px) {
                 font-size: 0.8125em;
 
             }

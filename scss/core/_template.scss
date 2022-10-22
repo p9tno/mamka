@@ -4,17 +4,12 @@ body {
 	font-family: $main_font_family;
 	color: $main_color;
 	line-height: $main_line_height;
-	// font-weight: 300;
-	// background-color: #101010;
+
 	font-size: calc(.04 * 100vw + 0px);
 
-	@media (min-width: 768px) {
+	@media (min-width: 501px) {
 		font-size: calc(.008333334 * 100vw + 0px);
 	}
-
-	// @media (min-width: 1600px) {
-	// 	font-size: $main_font_size;
-	// }
 
 }
 
@@ -26,7 +21,7 @@ body {
 	font-size: $main_font_size;
 
 	&_thank {
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			background-image: url("../../img/thank.jpg");
 			background-position: center;
 			background-repeat: no-repeat;
@@ -42,13 +37,18 @@ body {
 	flex-grow: 1;
 	overflow: hidden;
 }
+@media (max-width: 500px) {
+	}
+
+@media (min-width: 501px) {
+	}
 
 .container_center {
 	max-width: $container_width;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 2.5em;
-	@media (min-width: 768px) {
+	@media (min-width: 501px) {
 		padding: 0 1em;
 
 	}
@@ -56,35 +56,33 @@ body {
 
 .section {
 	padding: 2em 0;
-	@media (min-width: 768px) {
+	@media (min-width: 501px) {
 		padding: 3.75em 0;
 	}
 
 	&__title {
 		margin: 0;
 		font-family: $second_font_family;
-		font-weight: 200;
+		font-weight: 400;
 		font-size: 1em;
 		line-height: 1.1667;
 		text-align: center;
 		margin: 0 auto;
-
-		// letter-spacing: -0.02em;
 		letter-spacing: 0.02em;
 
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			width: 43.75em;
 		}
 
 		span {
 			font-size: 1.5625em;
-			@media (min-width: 768px) {
+			@media (min-width: 501px) {
 				font-size: 3.75em;
 
 			}
 		}
 
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			&_sm {
 				line-height: 1.1365;
 
@@ -101,14 +99,14 @@ body {
 		margin: 1.5625em auto 0;
 		text-align: center;
 		font-weight: 300;
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			width: 36em;
 			line-height: 1.389;
 		}
 
 		span {
 			font-size: 0.875em;
-			@media (min-width: 768px) {
+			@media (min-width: 501px) {
 				font-size: 1.125em;
 
 			}
@@ -118,13 +116,13 @@ body {
 }
 
 .desktop {
-	@media (max-width: 767px) {
+	@media (max-width: 500px) {
 		display: none !important;
 	}
 }
 
 .mobile {
-	@media (min-width: 768px) {
+	@media (min-width: 501px) {
 		display: none !important;
 	}
 }
@@ -176,12 +174,12 @@ body {
 			border-bottom: 1px solid;
 			border-color: inherit;
 
-			@media (min-width: 768px) {
+			@media (min-width: 501px) {
 				transition: width 0.3s;
 			}
 		}
 
-		@media (min-width: 768px) {
+		@media (min-width: 501px) {
 			&:hover {
 				&:after {
 					width: 65%;
