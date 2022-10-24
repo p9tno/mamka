@@ -39,7 +39,7 @@ block content
                                 .quote__content.desktop
                                     span Любое наше пожелание было услышано и реализовано. Ариане эта комната запомниться на всю жизнь! Мы правильно сделали, что нашли вас.
                                 .quote__content.mobile
-                                    span Любое наше пожелание было услышано | и реализовано. Ариане эта комната | запомнится на всю жизнь! | Мы правильно сделали, что нашли вас.
+                                    span Любое наше пожелание было услышано <br>и реализовано. Ариане эта комната<br> запомнится на всю жизнь!<br> Мы правильно сделали, что нашли вас.
                     .clients__persone
                         .persone
                             .persone__bg.bg
@@ -138,7 +138,7 @@ block content
                 .development__left
                     h2.section__title.section__title_sm(data-aos="fade-up")
                         span.desktop Получите коммерческое предложение на разработку дизайн-проекта для вашей детской
-                        span.mobile Получите | коммерческое | предложение | на разработку | дизайн-проекта | для вашей детской
+                        span.mobile Получите<br> коммерческое<br> предложение<br> на разработку<br> дизайн-проекта<br> для вашей детской
                         small в 3-х ценовых вариантах
                     .development__offer.bg(data-aos="fade-up")
 
@@ -170,6 +170,8 @@ block content
                                 input(type="hidden" name="notspam" value="")
 
                                 .form__row
+                                    .form__message
+                                        span Некорректный номер
                                     input.tel(type="text", name="phone" required placeholder="+7")
                                 .form__row
                                     .button
@@ -266,6 +268,8 @@ block content
                             input(type="hidden" name="notspam" value="")
 
                             .form__row
+                                .form__message
+                                    span Некорректный номер
                                 input.tel(type="text", name="phone" required placeholder="+7")
                             .form__row
                                 .button
@@ -286,7 +290,7 @@ block content
                     h2.section__title.section__title_sm.desktop(data-aos="fade-up")
                         span Производим индивидуальную детскую мебель на собственной фабрике на Урале
                     h2.section__title.section__title_sm.mobile
-                        span Производим | индивидуальную | детскую мебель на | собственной фабрике | на Урале
+                        span Производим<br> индивидуальную<br> детскую мебель на<br> собственной фабрике<br> на Урале
                     .production__square
                         span 4 000 м<sup>2</sup>
                         small площадь производства
@@ -334,7 +338,7 @@ block content
             h2.section__title.section__title_sm.desktop(data-aos="fade-up")
                 span Более 100 категорий и наименований продукции в ассортименте и под заказ с полной гарантией производителя
             h2.section__title.section__title_sm.mobile
-                span Более 100 категорий / и наименований продукции / в ассортименте и под заказ / с полной гарантией / производителя
+                span Более 100 категорий<br> и наименований продукции<br> в ассортименте и под заказ<br> с полной гарантией<br> производителя
             .products__grid
                 each item in [ {number: '1', title: 'Кровати'}, {number: '2', title: 'Диваны '}, {number: '3', title: 'Шкафы'}, {number: '4', title: 'Столы и стулья'}, {number: '5', title: 'Спортивные уголки'}, {number: '6', title: 'Зоны хранения'} ]
                     .products__item.bg(style="background-image: url('img/cat_"+item.number+".webp')")
@@ -360,6 +364,8 @@ block content
                             input(type="hidden" name="notspam" value="")
 
                             .form__row
+                                .form__message
+                                    span Некорректный номер
                                 input.tel(type="text", name="phone" required placeholder="+7")
                             .form__row
                                 .button

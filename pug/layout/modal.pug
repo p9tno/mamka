@@ -46,11 +46,13 @@
                             span Наш менеджер свяжется с вами в ближайшее время, чтобы уточнить все детали вашего проекта и подготовить коммерческое предложение
                         form.form(action="send.php")
                             //- из какой формы на сайте
-                            input(type="hidden" name="subject" value="форма: Закажите наш обратный звонок")
+                            input(type="hidden" name="subject" value="Форма для дизайнеров")
                             //- проверка спама
                             input(type="hidden" name="notspam" value="")
 
                             .form__row
+                                .form__message
+                                    span Некорректный номер
                                 input.tel(type="text", name="phone" required placeholder="+7")
                             .form__row
                                 .button
@@ -93,6 +95,8 @@
                             input(type="hidden" name="notspam" value="")
 
                             .form__row
+                                .form__message
+                                    span Некорректный номер
                                 input.tel(type="text", name="phone" required placeholder="+7")
                             .form__row
                                 .button
@@ -124,9 +128,9 @@
                     .pop_up__form
                         a.mobile(href="#" class="modal-close" data-dismiss="modal")
                         .pop_up__title
-                            span Оставьте<br> ваши контакты
+                            span Оставьте<br> свои контакты
                         .pop_up__description
-                            span Наш менеджер свяжется с вами в ближайшее время, чтобы уточнить все детали вашего проекта и подготовить коммерческое предложение
+                            span Наш менеджер свяжется с вами в ближайше время, чтобы уточнить время и дату вашего визита
                         form.form(action="send.php")
                             //- из какой формы на сайте
                             input(type="hidden" name="subject" value="форма: Записаться на визит в шоурум")
@@ -134,10 +138,12 @@
                             input(type="hidden" name="notspam" value="")
 
                             .form__row
+                                .form__message
+                                    span Некорректный номер
                                 input.tel(type="text", name="phone" required placeholder="+7")
                             .form__row
                                 .button
-                                    button.btn(type="submit") Получить предложение
+                                    button.btn(type="submit") Записаться на визит
                             .form__row.form__row_mb-0
                                 .form__privacy
                                     span Нажимая на кнопку, вы соглашаетесь на <a href="#" class="privacy_policy_js">условия обработки данных</a>

@@ -168,7 +168,7 @@
             padding: 1.875em 1.375em 2em;
 
             @media (min-width: 501px) {
-                padding: 3.4375em 3.125em 4.375em;
+                padding: 3.4375em 2.75em 4.375em;
 
             }
 
@@ -194,6 +194,10 @@
 
             .development__label {
                 text-align: center;
+                @media (min-width: 501px) {
+                    margin-bottom: 2.25em;
+
+                }
             }
         }
     }

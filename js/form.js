@@ -19,6 +19,7 @@ function submitForm() {
         let notspam = form.find('[name="notspam"]');
         notspam.val('Not spam');
         let fields = form.find('[required]');
+        let infoMessege = form.find('.form__message');
         let url = form.attr('action');
         let formData = form.serialize();
         let empty = 0;
@@ -26,15 +27,18 @@ function submitForm() {
         fields.each(function (index, el) {
             if ($(this).val() === '') {
                 $(this).addClass('invalid');
+                infoMessege.addClass('invalid');
                 empty++;
             } else {
                 $(this).removeClass('invalid');
+                infoMessege.removeClass('invalid');
             }
         });
 
         setTimeout(function () {
             fields.removeClass('invalid');
-        }, 1500);
+            infoMessege.removeClass('invalid');
+        }, 2000);
 
 
         if (empty === 0) {
